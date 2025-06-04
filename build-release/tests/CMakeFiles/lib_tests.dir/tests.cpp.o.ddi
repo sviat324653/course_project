@@ -1,0 +1,11 @@
+{
+"rules": [
+{
+"primary-output": "tests/CMakeFiles/lib_tests.dir/tests.cpp.o",
+"requires": [
+]
+}
+],
+"version": 0,
+"revision": 0
+}

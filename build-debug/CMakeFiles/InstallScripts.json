@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/sviatoslav/course_project/build-debug/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

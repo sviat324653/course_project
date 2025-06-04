@@ -1,0 +1,38 @@
+[
+{
+  "directory": "/home/sviatoslav/course_project/build-debug",
+  "command": "/usr/bin/cc -I/opt/cuda/include -g -fdiagnostics-color=always -mavx2 -o CMakeFiles/full.dir/main_test.c.o -c /home/sviatoslav/course_project/main_test.c",
+  "file": "/home/sviatoslav/course_project/main_test.c",
+  "output": "CMakeFiles/full.dir/main_test.c.o"
+},
+{
+  "directory": "/home/sviatoslav/course_project/build-debug",
+  "command": "/usr/bin/cc -I/opt/cuda/include -g -fdiagnostics-color=always -mavx2 -o CMakeFiles/full.dir/reduction_test.c.o -c /home/sviatoslav/course_project/reduction_test.c",
+  "file": "/home/sviatoslav/course_project/reduction_test.c",
+  "output": "CMakeFiles/full.dir/reduction_test.c.o"
+},
+{
+  "directory": "/home/sviatoslav/course_project/build-debug",
+  "command": "/usr/bin/cc -I/opt/cuda/include -g -fdiagnostics-color=always -mavx2 -o CMakeFiles/full.dir/scan_test.c.o -c /home/sviatoslav/course_project/scan_test.c",
+  "file": "/home/sviatoslav/course_project/scan_test.c",
+  "output": "CMakeFiles/full.dir/scan_test.c.o"
+},
+{
+  "directory": "/home/sviatoslav/course_project/build-debug",
+  "command": "/usr/bin/cc -I/opt/cuda/include -g -fdiagnostics-color=always -mavx2 -o CMakeFiles/full.dir/reduction_avx.c.o -c /home/sviatoslav/course_project/reduction_avx.c",
+  "file": "/home/sviatoslav/course_project/reduction_avx.c",
+  "output": "CMakeFiles/full.dir/reduction_avx.c.o"
+},
+{
+  "directory": "/home/sviatoslav/course_project/build-debug",
+  "command": "/opt/cuda/bin/nvcc -forward-unknown-to-host-compiler -I/opt/cuda/include -g -std=c++17 \"--generate-code=arch=compute_75,code=[compute_75,sm_75]\" --generate-line-info -g -G -x cu -rdc=true -c /home/sviatoslav/course_project/reduction.cu -o CMakeFiles/full.dir/reduction.cu.o",
+  "file": "/home/sviatoslav/course_project/reduction.cu",
+  "output": "CMakeFiles/full.dir/reduction.cu.o"
+},
+{
+  "directory": "/home/sviatoslav/course_project/build-debug",
+  "command": "/opt/cuda/bin/nvcc -forward-unknown-to-host-compiler -I/opt/cuda/include -g -std=c++17 \"--generate-code=arch=compute_75,code=[compute_75,sm_75]\" --generate-line-info -g -G -x cu -rdc=true -c /home/sviatoslav/course_project/scan.cu -o CMakeFiles/full.dir/scan.cu.o",
+  "file": "/home/sviatoslav/course_project/scan.cu",
+  "output": "CMakeFiles/full.dir/scan.cu.o"
+}
+]

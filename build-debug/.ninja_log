@@ -1,0 +1,9 @@
+# ninja log v6
+1	19	1747861249337531057	CMakeFiles/full.dir/scan_test.c.o	2b1439d5b5d13f2f
+1	20	1748081202448996260	CMakeFiles/full.dir/main_test.c.o	c210d1dbc9eb6e9a
+1	30	1747860924510384688	CMakeFiles/full.dir/reduction_test.c.o	c0feb64d06035ba7
+1	346	1747948340350537457	CMakeFiles/full.dir/reduction_avx.c.o	8ff78d1414d19119
+1	827	1748081202448996260	CMakeFiles/full.dir/reduction.cu.o	d7231a4472831682
+876	934	1748098438491412528	full	f675cc4437ea7c25
+1	831	1748098437614707445	CMakeFiles/full.dir/scan.cu.o	e680ec6cc76acd93
+831	876	1748098438444743816	CMakeFiles/full.dir/cmake_device_link.o	a33e682ee1958cef

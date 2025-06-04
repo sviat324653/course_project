@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/sviatoslav/course_project/build-release/_deps/googletest-subbuild/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
