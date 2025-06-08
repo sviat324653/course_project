@@ -22,7 +22,7 @@
     }
 
 
-__global__ void block_scan_sum_kernel1(float *g_data, float *sums, unsigned int n)
+__global__ void block_scan_sum_kernel1(float *g_data, float *sums, unsigned int size)
 {
     extern __shared__ float sdata[];
 
@@ -32,7 +32,7 @@ __global__ void block_scan_sum_kernel1(float *g_data, float *sums, unsigned int 
     unsigned int gtid = blockIdx.x * blockDim.x + threadIdx.x;
 
     int bufout = 0, bufin = 1;
-    sdata[bufout * block_size + tid] = (gtid < n) ? g_data[gtid] : 0.0f;
+    sdata[bufout * block_size + tid] = (gtid < size) ? g_data[gtid] : 0.0f;
     __syncthreads();
 
     for (unsigned int offset = 1; offset < block_size; offset <<= 1)
@@ -47,7 +47,7 @@ __global__ void block_scan_sum_kernel1(float *g_data, float *sums, unsigned int 
         __syncthreads();
     }
 
-    if (gtid < n) g_data[gtid] = sdata[bufout * block_size + tid];
+    if (gtid < size) g_data[gtid] = sdata[bufout * block_size + tid];
     if (tid == block_size - 1)
     {
         sums[blockIdx.x] = sdata[bufout * block_size + tid];
@@ -55,7 +55,7 @@ __global__ void block_scan_sum_kernel1(float *g_data, float *sums, unsigned int 
 }
 
 
-__global__ void block_scan_sum_kernel2(float *g_data, float *sums, unsigned int n)
+__global__ void block_scan_sum_kernel2(float *g_data, float *sums, unsigned int size)
 {
     extern __shared__ float sdata[];
 
@@ -65,8 +65,8 @@ __global__ void block_scan_sum_kernel2(float *g_data, float *sums, unsigned int 
 
     unsigned int gtid = blockIdx.x * blockDim.x + threadIdx.x;
 
-    sdata[2 * tid] = (2 * gtid < n) ? g_data[2 * gtid] : 0.0f;
-    sdata[2 * tid + 1] = (2 * gtid + 1 < n) ? g_data[2 * gtid + 1] : 0.0f;
+    sdata[2 * tid] = (2 * gtid < size) ? g_data[2 * gtid] : 0.0f;
+    sdata[2 * tid + 1] = (2 * gtid + 1 < size) ? g_data[2 * gtid + 1] : 0.0f;
 
     unsigned int offset = 1;
     for (unsigned int d = block_size; d > 0; d >>= 1)
@@ -74,8 +74,8 @@ __global__ void block_scan_sum_kernel2(float *g_data, float *sums, unsigned int 
         __syncthreads();
         if (tid < d)
         {
-            int ai = offset * (2 * tid + 1) - 1;
-            int bi = offset * (2 * tid + 2) - 1;
+            unsigned int ai = offset * (2 * tid + 1) - 1;
+            unsigned int bi = offset * (2 * tid + 2) - 1;
             sdata[bi] += sdata[ai];
         }
         offset <<= 1;
@@ -92,8 +92,8 @@ __global__ void block_scan_sum_kernel2(float *g_data, float *sums, unsigned int 
         __syncthreads();
         if (tid < d)
         {
-            int ai = offset * (2 * tid + 1) - 1;
-            int bi = offset * (2 * tid + 2) - 1;
+            unsigned int ai = offset * (2 * tid + 1) - 1;
+            unsigned int bi = offset * (2 * tid + 2) - 1;
             float t = sdata[ai];
             sdata[ai] = sdata[bi];
             sdata[bi] += t;
@@ -103,24 +103,24 @@ __global__ void block_scan_sum_kernel2(float *g_data, float *sums, unsigned int 
 
     if (tid == block_size - 1)
     {
-        if (2 * gtid + 1 < n)
+        if (2 * gtid + 1 < size)
             sums[blockIdx.x] = sdata[2 * tid + 1] + g_data[2 * gtid + 1];
         else
             sums[blockIdx.x] = sdata[2 * tid + 1];
     }
 
-    if (2 * gtid < n) g_data[2 * gtid] = sdata[2 * tid];
-    if (2 * gtid + 1 < n) g_data[2 * gtid + 1] = sdata[2 * tid + 1];
+    if (2 * gtid < size) g_data[2 * gtid] = sdata[2 * tid];
+    if (2 * gtid + 1 < size) g_data[2 * gtid + 1] = sdata[2 * tid + 1];
 }
 
 
-__inline__ __device__ int conflict_free_offset(int idx)
+__inline__ __device__ unsigned int conflict_avoid_offset(unsigned int idx)
 {
     return idx / NUM_BANKS;
 }
 
 
-__global__ void block_scan_sum_kernel3(float *g_data, float *sums, unsigned int n)
+__global__ void block_scan_sum_kernel3(float *g_data, float *sums, unsigned int size)
 {
     extern __shared__ float sdata[];
 
@@ -130,9 +130,9 @@ __global__ void block_scan_sum_kernel3(float *g_data, float *sums, unsigned int 
 
     unsigned int gtid = blockIdx.x * blockDim.x + threadIdx.x;
 
-    sdata[2 * tid + conflict_free_offset(2 * tid)] = (2 * gtid < n) ? g_data[2 * gtid] : 0.0f;
-    sdata[2 * tid + 1 + conflict_free_offset(2 * tid + 1)] =
-        (2 * gtid + 1 < n) ? g_data[2 * gtid + 1] : 0.0f;
+    sdata[2 * tid + conflict_avoid_offset(2 * tid)] = (2 * gtid < size) ? g_data[2 * gtid] : 0.0f;
+    sdata[2 * tid + 1 + conflict_avoid_offset(2 * tid + 1)] =
+        (2 * gtid + 1 < size) ? g_data[2 * gtid + 1] : 0.0f;
 
     unsigned int offset = 1;
     for (unsigned int d = block_size; d > 0; d >>= 1)
@@ -140,10 +140,10 @@ __global__ void block_scan_sum_kernel3(float *g_data, float *sums, unsigned int 
         __syncthreads();
         if (tid < d)
         {
-            int ai = offset * (2 * tid + 1) - 1;
-            int bi = offset * (2 * tid + 2) - 1;
-            ai += conflict_free_offset(ai);
-            bi += conflict_free_offset(bi);
+            unsigned int ai = offset * (2 * tid + 1) - 1;
+            unsigned int bi = offset * (2 * tid + 2) - 1;
+            ai += conflict_avoid_offset(ai);
+            bi += conflict_avoid_offset(bi);
             sdata[bi] += sdata[ai];
         }
         offset <<= 1;
@@ -151,7 +151,7 @@ __global__ void block_scan_sum_kernel3(float *g_data, float *sums, unsigned int 
 
     if (tid == 0)
     {
-        sdata[buffer_size - 1 + conflict_free_offset(buffer_size - 1)] = 0;
+        sdata[buffer_size - 1 + conflict_avoid_offset(buffer_size - 1)] = 0;
     }
 
     for (unsigned int d = 1; d < buffer_size; d <<= 1)
@@ -160,10 +160,10 @@ __global__ void block_scan_sum_kernel3(float *g_data, float *sums, unsigned int 
         __syncthreads();
         if (tid < d)
         {
-            int ai = offset * (2 * tid + 1) - 1;
-            int bi = offset * (2 * tid + 2) - 1;
-            ai += conflict_free_offset(ai);
-            bi += conflict_free_offset(bi);
+            unsigned int ai = offset * (2 * tid + 1) - 1;
+            unsigned int bi = offset * (2 * tid + 2) - 1;
+            ai += conflict_avoid_offset(ai);
+            bi += conflict_avoid_offset(bi);
             float t = sdata[ai];
             sdata[ai] = sdata[bi];
             sdata[bi] += t;
@@ -173,39 +173,39 @@ __global__ void block_scan_sum_kernel3(float *g_data, float *sums, unsigned int 
 
     if (tid == block_size - 1)
     {
-        if (2 * gtid + 1 < n)
+        if (2 * gtid + 1 < size)
             sums[blockIdx.x] =
-                sdata[2 * tid + 1 + conflict_free_offset(2 * tid + 1)] + g_data[2 * gtid + 1];
+                sdata[2 * tid + 1 + conflict_avoid_offset(2 * tid + 1)] + g_data[2 * gtid + 1];
         else
-            sums[blockIdx.x] = sdata[2 * tid + 1 + conflict_free_offset(2 * tid + 1)];
+            sums[blockIdx.x] = sdata[2 * tid + 1 + conflict_avoid_offset(2 * tid + 1)];
     }
 
-    if (2 * gtid < n) g_data[2 * gtid] = sdata[2 * tid + conflict_free_offset(2 * tid)];
-    if (2 * gtid + 1 < n)
-        g_data[2 * gtid + 1] = sdata[2 * tid + 1 + conflict_free_offset(2 * tid + 1)];
+    if (2 * gtid < size) g_data[2 * gtid] = sdata[2 * tid + conflict_avoid_offset(2 * tid)];
+    if (2 * gtid + 1 < size)
+        g_data[2 * gtid + 1] = sdata[2 * tid + 1 + conflict_avoid_offset(2 * tid + 1)];
 }
 
 
-__global__ void add_offsets1(float *g_data, float *sums, unsigned int n)
+__global__ void add_offsets_kernel1(float *g_data, float *sums, unsigned int size)
 {
     unsigned int gtid = blockIdx.x * blockDim.x + threadIdx.x;
 
-    if (gtid < n && blockIdx.x > 0) g_data[gtid] += sums[blockIdx.x - 1];
+    if (gtid < size && blockIdx.x > 0) g_data[gtid] += sums[blockIdx.x - 1];
 }
 
 
-__global__ void add_offsets2(float *g_data, float *sums, unsigned int n)
+__global__ void add_offsets_kernel2(float *g_data, float *sums, unsigned int size)
 {
     unsigned int gtid = blockIdx.x * blockDim.x + threadIdx.x;
 
-    if (2 * gtid < n) g_data[2 * gtid] += sums[blockIdx.x];
-    if (2 * gtid + 1 < n) g_data[2 * gtid + 1] += sums[blockIdx.x];
+    if (2 * gtid < size) g_data[2 * gtid] += sums[blockIdx.x];
+    if (2 * gtid + 1 < size) g_data[2 * gtid + 1] += sums[blockIdx.x];
 }
 
 
-void call_scan_kernel1(float *h_in, float *h_out, unsigned int n)
+void cuda_scan1(float *h_in, float *h_out, unsigned int size)
 {
-    unsigned int array_size_bytes = n * sizeof(float);
+    unsigned int array_size_bytes = size * sizeof(float);
     float *d_in, *sums;
 
     CUDA_CHECK(cudaMalloc(&d_in, array_size_bytes));
@@ -213,7 +213,7 @@ void call_scan_kernel1(float *h_in, float *h_out, unsigned int n)
     CUDA_CHECK(cudaMemcpy(d_in, h_in, array_size_bytes, cudaMemcpyHostToDevice));
 
     unsigned int threads_per_block = 512;
-    unsigned int num = n;
+    unsigned int num = size;
 
     unsigned int num_blocks = (num + threads_per_block - 1) / threads_per_block;
 
@@ -259,7 +259,7 @@ void call_scan_kernel1(float *h_in, float *h_out, unsigned int n)
         d_in = buffers_for_processing[depth];
         num = buffer_lengths_for_processing[depth];
 
-        add_offsets1<<<num_blocks, threads_per_block>>>(d_in, sums, num);
+        add_offsets_kernel1<<<num_blocks, threads_per_block>>>(d_in, sums, num);
 
         CUDA_CHECK(cudaDeviceSynchronize());
 
@@ -288,9 +288,9 @@ void call_scan_kernel1(float *h_in, float *h_out, unsigned int n)
 }
 
 
-void call_scan_kernel2(float *h_in, float *h_out, unsigned int n)
+void cuda_scan2(float *h_in, float *h_out, unsigned int size)
 {
-    unsigned int array_size_bytes = n * sizeof(float);
+    unsigned int array_size_bytes = size * sizeof(float);
     float *d_in, *sums;
 
     CUDA_CHECK(cudaMalloc(&d_in, array_size_bytes));
@@ -299,7 +299,7 @@ void call_scan_kernel2(float *h_in, float *h_out, unsigned int n)
 
     unsigned int threads_per_block = 512;
     unsigned int elements_per_block = threads_per_block * 2;
-    unsigned int num = n;
+    unsigned int num = size;
 
     unsigned int num_blocks = (num + elements_per_block - 1) / elements_per_block;
 
@@ -347,7 +347,7 @@ void call_scan_kernel2(float *h_in, float *h_out, unsigned int n)
         num = buffer_lengths_for_processing[depth];
         if (toggle)
         {
-            add_offsets2<<<num_blocks, threads_per_block>>>(d_in, sums, num);
+            add_offsets_kernel2<<<num_blocks, threads_per_block>>>(d_in, sums, num);
         }
         else
             toggle = 1;
@@ -378,9 +378,9 @@ void call_scan_kernel2(float *h_in, float *h_out, unsigned int n)
 }
 
 
-void call_scan_kernel3(float *h_in, float *h_out, unsigned int n)
+void cuda_scan3(float *h_in, float *h_out, unsigned int size)
 {
-    unsigned int array_size_bytes = n * sizeof(float);
+    unsigned int array_size_bytes = size * sizeof(float);
     float *d_in, *sums;
 
     CUDA_CHECK(cudaMalloc(&d_in, array_size_bytes));
@@ -389,7 +389,7 @@ void call_scan_kernel3(float *h_in, float *h_out, unsigned int n)
 
     unsigned int threads_per_block = 512;
     unsigned int elements_per_block = threads_per_block * 2;
-    unsigned int num = n;
+    unsigned int num = size;
 
     unsigned int num_blocks = (num + elements_per_block - 1) / elements_per_block;
 
@@ -437,7 +437,7 @@ void call_scan_kernel3(float *h_in, float *h_out, unsigned int n)
         num = buffer_lengths_for_processing[depth];
         if (toggle)
         {
-            add_offsets2<<<num_blocks, threads_per_block>>>(d_in, sums, num);
+            add_offsets_kernel2<<<num_blocks, threads_per_block>>>(d_in, sums, num);
         }
         else
             toggle = 1;
@@ -468,40 +468,54 @@ void call_scan_kernel3(float *h_in, float *h_out, unsigned int n)
 }
 
 
-extern "C" int cuda_scan()
+extern "C" int cuda_scan_test()
 {
-    unsigned int n = (1 << 29) - 37;
-    unsigned int array_size_bytes = n * sizeof(float);
+    unsigned int size = (1 << 29) - 37;
+    unsigned int array_size_bytes = size * sizeof(float);
 
     float *h_in, *h_out;
+    double *h_out_cpu;
 
     h_in = (float *)malloc(array_size_bytes);
     h_out = (float *)malloc(array_size_bytes);
+    h_out_cpu = (double *)malloc(size * sizeof(double));
 
-    for (unsigned int i = 0; i < n; i++)
+    for (unsigned int i = 0; i < size; i++)
     {
         h_in[i] = (float)(i % 100) + 0.1f;
     }
 
-    call_scan_kernel3(h_in, h_out, n);
+    struct timespec start1, end1;
+    double time_spent1;
 
-    for (unsigned int i = n - 10; i < n; i++)
+    clock_gettime(CLOCK_MONOTONIC, &start1);
+
+    cuda_scan3(h_in, h_out, size);
+
+    clock_gettime(CLOCK_MONOTONIC, &end1);
+
+    time_spent1 = (end1.tv_sec - start1.tv_sec) + (end1.tv_nsec - start1.tv_nsec) / 1e9;
+
+    printf("CUDA scan run time: %f milliseconds\n", time_spent1 * 1000);
+
+    for (unsigned int i = size - 10; i < size; i++)
     {
         printf("%f ", h_out[i]);
     }
 
     printf("\n\n");
-    double acc = 0.0;
 
     struct timespec start2, end2;
     double time_spent2;
 
     clock_gettime(CLOCK_MONOTONIC, &start2);
 
-    for (unsigned int i = 0; i < n; i++)
+    h_out_cpu[0] = h_in[0];
+
+    for (unsigned int i = 1; i < size; i++)
     {
-        acc += h_in[i];
-        if (i >= n - 10) printf("%lf ", acc);
+        h_out_cpu[i] = h_out_cpu[i - 1] + h_in[i];
+        if (i >= size - 10) printf("%lf ", h_out_cpu[i]);
     }
     printf("\n");
 
@@ -513,6 +527,7 @@ extern "C" int cuda_scan()
 
     free(h_in);
     free(h_out);
+    free(h_out_cpu);
 
     return 0;
 }

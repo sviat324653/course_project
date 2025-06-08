@@ -85,6 +85,24 @@ build CMakeFiles/full.dir/reduction_avx.c.o: C_COMPILER__full_unscanned_Release 
   OBJECT_DIR = CMakeFiles/full.dir
   OBJECT_FILE_DIR = CMakeFiles/full.dir
 
+build CMakeFiles/full.dir/stream_compaction_test.c.o: C_COMPILER__full_unscanned_Release /home/sviatoslav/course_project/stream_compaction_test.c || cmake_object_order_depends_target_full
+  CONFIG = Release
+  DEFINES = -DBENCHMARK
+  DEP_FILE = CMakeFiles/full.dir/stream_compaction_test.c.o.d
+  FLAGS = -O3 -DNDEBUG -fdiagnostics-color=always -mavx2 -O3 -Wall
+  INCLUDES = -I/opt/cuda/include
+  OBJECT_DIR = CMakeFiles/full.dir
+  OBJECT_FILE_DIR = CMakeFiles/full.dir
+
+build CMakeFiles/full.dir/sort_test.c.o: C_COMPILER__full_unscanned_Release /home/sviatoslav/course_project/sort_test.c || cmake_object_order_depends_target_full
+  CONFIG = Release
+  DEFINES = -DBENCHMARK
+  DEP_FILE = CMakeFiles/full.dir/sort_test.c.o.d
+  FLAGS = -O3 -DNDEBUG -fdiagnostics-color=always -mavx2 -O3 -Wall
+  INCLUDES = -I/opt/cuda/include
+  OBJECT_DIR = CMakeFiles/full.dir
+  OBJECT_FILE_DIR = CMakeFiles/full.dir
+
 build CMakeFiles/full.dir/reduction.cu.o: CUDA_COMPILER__full_unscanned_Release /home/sviatoslav/course_project/reduction.cu || cmake_object_order_depends_target_full
   CONFIG = Release
   DEFINES = -DBENCHMARK
@@ -105,6 +123,26 @@ build CMakeFiles/full.dir/scan.cu.o: CUDA_COMPILER__full_unscanned_Release /home
   OBJECT_DIR = CMakeFiles/full.dir
   OBJECT_FILE_DIR = CMakeFiles/full.dir
 
+build CMakeFiles/full.dir/stream_compaction.cu.o: CUDA_COMPILER__full_unscanned_Release /home/sviatoslav/course_project/stream_compaction.cu || cmake_object_order_depends_target_full
+  CONFIG = Release
+  DEFINES = -DBENCHMARK
+  DEP_FILE = CMakeFiles/full.dir/stream_compaction.cu.o.d
+  FLAGS = -O3 -DNDEBUG -std=c++17 "--generate-code=arch=compute_75,code=[compute_75,sm_75]" --generate-line-info -O3 -Wall -Xcompiler -fdiagnostics-color=always
+  INCLUDES = -I/opt/cuda/include
+  LAUNCHER = /usr/bin/unbuffer 
+  OBJECT_DIR = CMakeFiles/full.dir
+  OBJECT_FILE_DIR = CMakeFiles/full.dir
+
+build CMakeFiles/full.dir/sort.cu.o: CUDA_COMPILER__full_unscanned_Release /home/sviatoslav/course_project/sort.cu || cmake_object_order_depends_target_full
+  CONFIG = Release
+  DEFINES = -DBENCHMARK
+  DEP_FILE = CMakeFiles/full.dir/sort.cu.o.d
+  FLAGS = -O3 -DNDEBUG -std=c++17 "--generate-code=arch=compute_75,code=[compute_75,sm_75]" --generate-line-info -O3 -Wall -Xcompiler -fdiagnostics-color=always
+  INCLUDES = -I/opt/cuda/include
+  LAUNCHER = /usr/bin/unbuffer 
+  OBJECT_DIR = CMakeFiles/full.dir
+  OBJECT_FILE_DIR = CMakeFiles/full.dir
+
 
 # =============================================================================
 # Device Link build statements for EXECUTABLE target full
@@ -113,7 +151,7 @@ build CMakeFiles/full.dir/scan.cu.o: CUDA_COMPILER__full_unscanned_Release /home
 #############################################
 # Link the executable CMakeFiles/full.dir/cmake_device_link.o
 
-build CMakeFiles/full.dir/cmake_device_link.o: CUDA_EXECUTABLE_DEVICE_LINKER__full_Release CMakeFiles/full.dir/main_test.c.o CMakeFiles/full.dir/reduction_test.c.o CMakeFiles/full.dir/scan_test.c.o CMakeFiles/full.dir/reduction_avx.c.o CMakeFiles/full.dir/reduction.cu.o CMakeFiles/full.dir/scan.cu.o
+build CMakeFiles/full.dir/cmake_device_link.o: CUDA_EXECUTABLE_DEVICE_LINKER__full_Release CMakeFiles/full.dir/main_test.c.o CMakeFiles/full.dir/reduction_test.c.o CMakeFiles/full.dir/scan_test.c.o CMakeFiles/full.dir/reduction_avx.c.o CMakeFiles/full.dir/stream_compaction_test.c.o CMakeFiles/full.dir/sort_test.c.o CMakeFiles/full.dir/reduction.cu.o CMakeFiles/full.dir/scan.cu.o CMakeFiles/full.dir/stream_compaction.cu.o CMakeFiles/full.dir/sort.cu.o
   LANGUAGE_COMPILE_FLAGS = -O3 -DNDEBUG "--generate-code=arch=compute_75,code=[compute_75,sm_75]"
   LINK_LIBRARIES = -lcudadevrt -lcudart_static -lrt -lpthread -ldl
   LINK_PATH = -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1
@@ -127,7 +165,7 @@ build CMakeFiles/full.dir/cmake_device_link.o: CUDA_EXECUTABLE_DEVICE_LINKER__fu
 #############################################
 # Link the executable full
 
-build full: CUDA_EXECUTABLE_LINKER__full_Release CMakeFiles/full.dir/main_test.c.o CMakeFiles/full.dir/reduction_test.c.o CMakeFiles/full.dir/scan_test.c.o CMakeFiles/full.dir/reduction_avx.c.o CMakeFiles/full.dir/reduction.cu.o CMakeFiles/full.dir/scan.cu.o CMakeFiles/full.dir/cmake_device_link.o
+build full: CUDA_EXECUTABLE_LINKER__full_Release CMakeFiles/full.dir/main_test.c.o CMakeFiles/full.dir/reduction_test.c.o CMakeFiles/full.dir/scan_test.c.o CMakeFiles/full.dir/reduction_avx.c.o CMakeFiles/full.dir/stream_compaction_test.c.o CMakeFiles/full.dir/sort_test.c.o CMakeFiles/full.dir/reduction.cu.o CMakeFiles/full.dir/scan.cu.o CMakeFiles/full.dir/stream_compaction.cu.o CMakeFiles/full.dir/sort.cu.o CMakeFiles/full.dir/cmake_device_link.o
   CONFIG = Release
   FLAGS = -O3 -DNDEBUG "--generate-code=arch=compute_75,code=[compute_75,sm_75]"
   LINK_LIBRARIES = -lcudadevrt  -lcudart_static  -lrt  -lpthread  -ldl
@@ -184,16 +222,61 @@ build libcomponent_lib.a: CUDA_STATIC_LIBRARY_LINKER__component_lib_Release CMak
 
 build cmake_object_order_depends_target_multivex: phony || .
 
-build CMakeFiles/multivex.dir/scan.cu.o: CUDA_COMPILER__multivex_unscanned_Release /home/sviatoslav/course_project/scan.cu || cmake_object_order_depends_target_multivex
+build CMakeFiles/multivex.dir/reduction.cu.o: CUDA_COMPILER__multivex_unscanned_Release /home/sviatoslav/course_project/reduction.cu || cmake_object_order_depends_target_multivex
   CONFIG = Release
   DEFINES = -Dmultivex_EXPORTS
-  DEP_FILE = CMakeFiles/multivex.dir/scan.cu.o.d
-  FLAGS = -O3 -DNDEBUG -std=c++17 "--generate-code=arch=compute_52,code=[compute_52,sm_52]" -Xcompiler=-fPIC
+  DEP_FILE = CMakeFiles/multivex.dir/reduction.cu.o.d
+  FLAGS = -O3 -DNDEBUG -std=c++17 "--generate-code=arch=compute_75,code=[compute_75,sm_75]" -Xcompiler=-fPIC --generate-line-info -O3 -Wall -Xcompiler -fdiagnostics-color=always
   INCLUDES = -I/opt/cuda/include
   LAUNCHER = /usr/bin/unbuffer 
   OBJECT_DIR = CMakeFiles/multivex.dir
   OBJECT_FILE_DIR = CMakeFiles/multivex.dir
 
+build CMakeFiles/multivex.dir/scan.cu.o: CUDA_COMPILER__multivex_unscanned_Release /home/sviatoslav/course_project/scan.cu || cmake_object_order_depends_target_multivex
+  CONFIG = Release
+  DEFINES = -Dmultivex_EXPORTS
+  DEP_FILE = CMakeFiles/multivex.dir/scan.cu.o.d
+  FLAGS = -O3 -DNDEBUG -std=c++17 "--generate-code=arch=compute_75,code=[compute_75,sm_75]" -Xcompiler=-fPIC --generate-line-info -O3 -Wall -Xcompiler -fdiagnostics-color=always
+  INCLUDES = -I/opt/cuda/include
+  LAUNCHER = /usr/bin/unbuffer 
+  OBJECT_DIR = CMakeFiles/multivex.dir
+  OBJECT_FILE_DIR = CMakeFiles/multivex.dir
+
+build CMakeFiles/multivex.dir/stream_compaction.cu.o: CUDA_COMPILER__multivex_unscanned_Release /home/sviatoslav/course_project/stream_compaction.cu || cmake_object_order_depends_target_multivex
+  CONFIG = Release
+  DEFINES = -Dmultivex_EXPORTS
+  DEP_FILE = CMakeFiles/multivex.dir/stream_compaction.cu.o.d
+  FLAGS = -O3 -DNDEBUG -std=c++17 "--generate-code=arch=compute_75,code=[compute_75,sm_75]" -Xcompiler=-fPIC --generate-line-info -O3 -Wall -Xcompiler -fdiagnostics-color=always
+  INCLUDES = -I/opt/cuda/include
+  LAUNCHER = /usr/bin/unbuffer 
+  OBJECT_DIR = CMakeFiles/multivex.dir
+  OBJECT_FILE_DIR = CMakeFiles/multivex.dir
+
+build CMakeFiles/multivex.dir/sort.cu.o: CUDA_COMPILER__multivex_unscanned_Release /home/sviatoslav/course_project/sort.cu || cmake_object_order_depends_target_multivex
+  CONFIG = Release
+  DEFINES = -Dmultivex_EXPORTS
+  DEP_FILE = CMakeFiles/multivex.dir/sort.cu.o.d
+  FLAGS = -O3 -DNDEBUG -std=c++17 "--generate-code=arch=compute_75,code=[compute_75,sm_75]" -Xcompiler=-fPIC --generate-line-info -O3 -Wall -Xcompiler -fdiagnostics-color=always
+  INCLUDES = -I/opt/cuda/include
+  LAUNCHER = /usr/bin/unbuffer 
+  OBJECT_DIR = CMakeFiles/multivex.dir
+  OBJECT_FILE_DIR = CMakeFiles/multivex.dir
+
+
+# =============================================================================
+# Device Link build statements for SHARED_LIBRARY target multivex
+
+
+#############################################
+# Link the shared library CMakeFiles/multivex.dir/cmake_device_link.o
+
+build CMakeFiles/multivex.dir/cmake_device_link.o: CUDA_SHARED_LIBRARY_DEVICE_LINKER__multivex_Release CMakeFiles/multivex.dir/reduction.cu.o CMakeFiles/multivex.dir/scan.cu.o CMakeFiles/multivex.dir/stream_compaction.cu.o CMakeFiles/multivex.dir/sort.cu.o
+  LANGUAGE_COMPILE_FLAGS = -O3 -DNDEBUG "--generate-code=arch=compute_75,code=[compute_75,sm_75]"
+  LINK_LIBRARIES = -lcudadevrt -lcudart_static -lrt -lpthread -ldl
+  OBJECT_DIR = CMakeFiles/multivex.dir
+  SONAME = libmultivex.so
+  SONAME_FLAG = -Wl,-soname,
+  TARGET_FILE = CMakeFiles/multivex.dir/cmake_device_link.o
 
 # =============================================================================
 # Link build statements for SHARED_LIBRARY target multivex
@@ -202,9 +285,9 @@ build CMakeFiles/multivex.dir/scan.cu.o: CUDA_COMPILER__multivex_unscanned_Relea
 #############################################
 # Link the shared library libmultivex.so
 
-build libmultivex.so: CUDA_SHARED_LIBRARY_LINKER__multivex_Release CMakeFiles/multivex.dir/scan.cu.o
+build libmultivex.so: CUDA_SHARED_LIBRARY_LINKER__multivex_Release CMakeFiles/multivex.dir/reduction.cu.o CMakeFiles/multivex.dir/scan.cu.o CMakeFiles/multivex.dir/stream_compaction.cu.o CMakeFiles/multivex.dir/sort.cu.o CMakeFiles/multivex.dir/cmake_device_link.o
   CONFIG = Release
-  LANGUAGE_COMPILE_FLAGS = -O3 -DNDEBUG "--generate-code=arch=compute_52,code=[compute_52,sm_52]"
+  LANGUAGE_COMPILE_FLAGS = -O3 -DNDEBUG "--generate-code=arch=compute_75,code=[compute_75,sm_75]"
   LINK_LIBRARIES = -lcudadevrt  -lcudart_static  -lrt  -lpthread  -ldl
   OBJECT_DIR = CMakeFiles/multivex.dir
   POST_BUILD = :

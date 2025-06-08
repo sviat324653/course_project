@@ -70,7 +70,7 @@ TEST(MyLibSuite, AddFunction)
 
 TEST_P(CudaScanTest, TestKernel1)
 {
-    call_scan_kernel1(h_in_, h_out_, size_);
+    cuda_scan1(h_in_, h_out_, size_);
     for (unsigned int i = 0; i < size_; i++)
     {
         EXPECT_FLOAT_EQ(h_out_[i], (float)h_out_cpu_[i]);
@@ -80,7 +80,7 @@ TEST_P(CudaScanTest, TestKernel1)
 
 TEST_P(CudaScanTest, TestKernel2)
 {
-    call_scan_kernel2(h_in_, h_out_, size_);
+    cuda_scan2(h_in_, h_out_, size_);
     for (unsigned int i = 0; i < size_ - 1; i++)
     {
         EXPECT_FLOAT_EQ(h_out_[i + 1], (float)h_out_cpu_[i]);
@@ -90,7 +90,7 @@ TEST_P(CudaScanTest, TestKernel2)
 
 TEST_P(CudaScanTest, TestKernel3)
 {
-    call_scan_kernel3(h_in_, h_out_, size_);
+    cuda_scan3(h_in_, h_out_, size_);
     for (unsigned int i = 0; i < size_ - 1; i++)
     {
         EXPECT_FLOAT_EQ(h_out_[i + 1], (float)h_out_cpu_[i]);

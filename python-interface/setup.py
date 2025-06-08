@@ -38,7 +38,7 @@ setup(
     version=package_version,
     packages=[package_name],
     package_data={
-        package_name: ["libmultivex.so", "scan.h"],
+        package_name: ["libmultivex.so", "scan.h", "reduction.h", "stream_compaction.h", "sort.h"],
     },
     ext_modules=cythonize(
         extensions,
@@ -54,6 +54,6 @@ setup(
         "Programming Language :: Cython",
         "License :: OSI Approved :: MIT License"
     ],
-    python_requires='>=3.8',
+    python_requires='>=3.13',
     zip_safe=False,
 )

@@ -1,12 +1,12 @@
 #include <stdio.h>
 
 
-int cuda_reduction();
+int cuda_reduction_test();
 int avx_reduction();
 
 
 int reduction_test() {
-    cuda_reduction();
+    cuda_reduction_test();
     printf("\n");
     avx_reduction();
     return 0;

@@ -1,0 +1,21 @@
+# ninja log v6
+820	832	1749069221635861237	/home/sviatoslav/course_project/build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-build	2627e428f72f2b9c
+856	874	1749069221675862994	CMakeFiles/googletest-populate-complete	93c86aaed5873a86
+820	832	1749069221635861237	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-build	2627e428f72f2b9c
+796	808	1749069221612526879	/home/sviatoslav/course_project/build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-patch	302e0817d95e1541
+856	874	1749069221675862994	/home/sviatoslav/course_project/build-debug/_deps/googletest-subbuild/CMakeFiles/googletest-populate-complete	93c86aaed5873a86
+796	808	1749069221612526879	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-patch	302e0817d95e1541
+832	844	1749069221645861677	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-install	854454228b6f5ab9
+856	874	1749069221675862994	/home/sviatoslav/course_project/build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-done	93c86aaed5873a86
+844	856	1749069221659195595	/home/sviatoslav/course_project/build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-test	305728a8bb895bff
+844	856	1749069221659195595	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-test	305728a8bb895bff
+808	820	1749069221622527319	/home/sviatoslav/course_project/build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-configure	92bb813ccac2aeb9
+0	12	1749069220815825228	/home/sviatoslav/course_project/build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-mkdir	348c70650a7e7160
+0	12	1749069220815825228	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-mkdir	348c70650a7e7160
+808	820	1749069221622527319	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-configure	92bb813ccac2aeb9
+856	874	1749069221675862994	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-done	93c86aaed5873a86
+13	784	1749069221589192521	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-download	31437d06d7e8936f
+13	784	1749069221589192521	/home/sviatoslav/course_project/build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-download	31437d06d7e8936f
+784	796	1749069221599192960	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-update	3feb882f919bd070
+832	844	1749069221645861677	/home/sviatoslav/course_project/build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-install	854454228b6f5ab9
+784	796	1749069221599192960	/home/sviatoslav/course_project/build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-update	3feb882f919bd070

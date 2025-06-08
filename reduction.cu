@@ -4,6 +4,8 @@
 #include <time.h>
 #include <stdlib.h>
 
+#include "reduction.h"
+
 
 #define CUDA_CHECK(err) { \
     cudaError_t err_ = (err); \
@@ -14,7 +16,7 @@
 }
 
 
-__global__ void block_reduce_sum_kernel1(float *g_in, float *g_out, unsigned int n) {
+__global__ void block_reduce_sum_kernel1(float *g_in, float *g_out, unsigned int size) {
     unsigned int tid = threadIdx.x;
     unsigned int block_size = blockDim.x;
 
@@ -35,7 +37,7 @@ __global__ void block_reduce_sum_kernel1(float *g_in, float *g_out, unsigned int
 }
 
 
-__global__ void block_reduce_sum_kernel2(const float *g_in, float *g_out, unsigned int n) {
+__global__ void block_reduce_sum_kernel2(const float *g_in, float *g_out, unsigned int size) {
     extern __shared__ float sdata[];
 
     unsigned int tid = threadIdx.x;
@@ -43,7 +45,7 @@ __global__ void block_reduce_sum_kernel2(const float *g_in, float *g_out, unsign
 
     unsigned int gtid = blockIdx.x * blockDim.x + threadIdx.x;
     
-    float value = (gtid < n) ? g_in[gtid] : 0.0f;
+    float value = (gtid < size) ? g_in[gtid] : 0.0f;
 
     sdata[tid] = value;
 
@@ -70,7 +72,7 @@ __inline__ __device__ float warp_reduce_sum(float val, unsigned int start_offset
 }
 
 
-__global__ void block_reduce_sum_kernel3(const float *g_in, float *g_out, unsigned int n) {
+__global__ void block_reduce_sum_kernel3(const float *g_in, float *g_out, unsigned int size) {
     extern __shared__ float sdata[];
 
     unsigned int tid = threadIdx.x;
@@ -78,7 +80,7 @@ __global__ void block_reduce_sum_kernel3(const float *g_in, float *g_out, unsign
 
     unsigned int gtid = blockIdx.x * blockDim.x + threadIdx.x;
 
-    float value = (gtid < n) ? g_in[gtid] : 0.0f;
+    float value = (gtid < size) ? g_in[gtid] : 0.0f;
 
     value = warp_reduce_sum(value, 16);
 
@@ -99,10 +101,10 @@ __global__ void block_reduce_sum_kernel3(const float *g_in, float *g_out, unsign
 }
 
 
-void call_reduction_kernel2(float *h_in, float *h_out, unsigned int n)
+void cuda_reduction2(float *h_in, float *h_out, unsigned int size)
 {
 
-    unsigned int array_size_bytes = n * sizeof(float);
+    unsigned int array_size_bytes = size * sizeof(float);
     float *d_in, *d_intermediate, *d_final_gpu_result;
 
     CUDA_CHECK(cudaMalloc(&d_in, array_size_bytes));
@@ -111,7 +113,7 @@ void call_reduction_kernel2(float *h_in, float *h_out, unsigned int n)
     CUDA_CHECK(cudaMemcpy(d_in, h_in, array_size_bytes, cudaMemcpyHostToDevice));
 
     unsigned int threads_per_block = 1024;
-    unsigned int num_elements_to_reduce = n;
+    unsigned int num_elements_to_reduce = size;
     float *current_d_in = d_in;
     float *current_d_out;
 
@@ -165,10 +167,10 @@ void call_reduction_kernel2(float *h_in, float *h_out, unsigned int n)
 }
 
 
-void call_reduction_kernel3(float *h_in, float *h_out, unsigned int n)
+void cuda_reduction3(float *h_in, float *h_out, unsigned int size)
 {
 
-    unsigned int array_size_bytes = n * sizeof(float);
+    unsigned int array_size_bytes = size * sizeof(float);
     float *d_in, *d_intermediate, *d_final_gpu_result;
 
     CUDA_CHECK(cudaMalloc(&d_in, array_size_bytes));
@@ -177,7 +179,7 @@ void call_reduction_kernel3(float *h_in, float *h_out, unsigned int n)
     CUDA_CHECK(cudaMemcpy(d_in, h_in, array_size_bytes, cudaMemcpyHostToDevice));
 
     unsigned int threadsPerBlock = 256;
-    unsigned int numElementsToReduce = n;
+    unsigned int numElementsToReduce = size;
     float *current_d_in = d_in;
     float *current_d_out;
 
@@ -235,11 +237,13 @@ void call_reduction_kernel3(float *h_in, float *h_out, unsigned int n)
 }
 
 
-extern "C" int cuda_reduction() {
-    unsigned int n = (1 << 29);
-    unsigned int array_size_bytes = n * sizeof(float);
+extern "C" int cuda_reduction_test() {
+    unsigned int size = (1 << 29);
+    unsigned int array_size_bytes = size * sizeof(float);
 
     float *h_in, *h_out_gpu;
+
+    cudaFree(0); // простро рандомна CUDA API функція, щоб ініціалізувати контекст
 
 
     struct timespec start1, end1;
@@ -257,7 +261,7 @@ extern "C" int cuda_reduction() {
     printf("memory allocation run time: %f milliseconds\n", time_spent1 * 1000);
 
     double cpu_sum = 0.0;
-    for (unsigned int i = 0; i < n; i++) {
+    for (unsigned int i = 0; i < size; i++) {
         h_in[i] = (float)(i % 100) + 0.1f;
     }
 
@@ -265,7 +269,7 @@ extern "C" int cuda_reduction() {
     double time_spent3;
 
     clock_gettime(CLOCK_MONOTONIC, &start3);
-    for (unsigned int i = 0; i < n; i++) {
+    for (unsigned int i = 0; i < size; i++) {
         cpu_sum += h_in[i];
     }
 
@@ -282,17 +286,17 @@ extern "C" int cuda_reduction() {
 
     clock_gettime(CLOCK_MONOTONIC, &start2);
 
-    call_reduction_kernel2(h_in, h_out_gpu, n);
+    cuda_reduction2(h_in, h_out_gpu, size);
 
     clock_gettime(CLOCK_MONOTONIC, &end2);
 
     time_spent2 = (end2.tv_sec - start2.tv_sec) +
                  (end2.tv_nsec - start2.tv_nsec) / 1e9;
 
-    printf("GPU kernel2 run time: %f milliseconds\n", time_spent2 * 1000);
+    printf("CUDA reduction run time: %f milliseconds\n", time_spent2 * 1000);
 
     printf("Sum computed by kernel2: %f\n", *h_out_gpu);
-    call_reduction_kernel3(h_in, h_out_gpu, n);
+    cuda_reduction3(h_in, h_out_gpu, size);
     printf("Sum computed by kernel3: %f\n", *h_out_gpu);
 
     float diff = fabsf(*h_out_gpu - (float)cpu_sum);

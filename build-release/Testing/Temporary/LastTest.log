@@ -1,0 +1,2214 @@
+Start testing: Jun 08 00:01 EEST
+----------------------------------------------------------
+1/79 Testing: MyLibSuite.AddFunction
+1/79 Test: MyLibSuite.AddFunction
+Command: "/home/sviatoslav/course_project/build-release/tests/lib_tests" "--gtest_filter=MyLibSuite.AddFunction" "--gtest_also_run_disabled_tests"
+Directory: /home/sviatoslav/course_project/build-release/tests
+"MyLibSuite.AddFunction" start time: Jun 08 00:01 EEST
+Output:
+----------------------------------------------------------
+Running main() from /home/sviatoslav/course_project/build-release/_deps/googletest-src/googletest/src/gtest_main.cc
+[0;33mNote: Google Test filter = MyLibSuite.AddFunction
+[m[0;32m[==========] [mRunning 1 test from 1 test suite.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m1 test from MyLibSuite
+[0;32m[ RUN      ] [mMyLibSuite.AddFunction
+[0;32m[       OK ] [mMyLibSuite.AddFunction (0 ms)
+[0;32m[----------] [m1 test from MyLibSuite (0 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m1 test from 1 test suite ran. (0 ms total)
+[0;32m[  PASSED  ] [m1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"MyLibSuite.AddFunction" end time: Jun 08 00:01 EEST
+"MyLibSuite.AddFunction" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/79 Testing: ScanRandomTests/CudaScanTest.TestKernel1/1
+2/79 Test: ScanRandomTests/CudaScanTest.TestKernel1/1
+Command: "/home/sviatoslav/course_project/build-release/tests/lib_tests" "--gtest_filter=ScanRandomTests/CudaScanTest.TestKernel1/0" "--gtest_also_run_disabled_tests"
+Directory: /home/sviatoslav/course_project/build-release/tests
+"ScanRandomTests/CudaScanTest.TestKernel1/1" start time: Jun 08 00:01 EEST
+Output:
+----------------------------------------------------------
+Running main() from /home/sviatoslav/course_project/build-release/_deps/googletest-src/googletest/src/gtest_main.cc
+[0;33mNote: Google Test filter = ScanRandomTests/CudaScanTest.TestKernel1/0
+[m[0;32m[==========] [mRunning 1 test from 1 test suite.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest
+[0;32m[ RUN      ] [mScanRandomTests/CudaScanTest.TestKernel1/0
+    ArrayTestFixture::SetUp() for size: 1
+[0;32m[       OK ] [mScanRandomTests/CudaScanTest.TestKernel1/0 (158 ms)
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest (158 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m1 test from 1 test suite ran. (158 ms total)
+[0;32m[  PASSED  ] [m1 test.
+<end of output>
+Test time =   0.24 sec
+----------------------------------------------------------
+Test Passed.
+"ScanRandomTests/CudaScanTest.TestKernel1/1" end time: Jun 08 00:01 EEST
+"ScanRandomTests/CudaScanTest.TestKernel1/1" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/79 Testing: ScanRandomTests/CudaScanTest.TestKernel1/2
+3/79 Test: ScanRandomTests/CudaScanTest.TestKernel1/2
+Command: "/home/sviatoslav/course_project/build-release/tests/lib_tests" "--gtest_filter=ScanRandomTests/CudaScanTest.TestKernel1/1" "--gtest_also_run_disabled_tests"
+Directory: /home/sviatoslav/course_project/build-release/tests
+"ScanRandomTests/CudaScanTest.TestKernel1/2" start time: Jun 08 00:01 EEST
+Output:
+----------------------------------------------------------
+Running main() from /home/sviatoslav/course_project/build-release/_deps/googletest-src/googletest/src/gtest_main.cc
+[0;33mNote: Google Test filter = ScanRandomTests/CudaScanTest.TestKernel1/1
+[m[0;32m[==========] [mRunning 1 test from 1 test suite.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest
+[0;32m[ RUN      ] [mScanRandomTests/CudaScanTest.TestKernel1/1
+    ArrayTestFixture::SetUp() for size: 2
+[0;32m[       OK ] [mScanRandomTests/CudaScanTest.TestKernel1/1 (177 ms)
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest (177 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m1 test from 1 test suite ran. (177 ms total)
+[0;32m[  PASSED  ] [m1 test.
+<end of output>
+Test time =   0.26 sec
+----------------------------------------------------------
+Test Passed.
+"ScanRandomTests/CudaScanTest.TestKernel1/2" end time: Jun 08 00:01 EEST
+"ScanRandomTests/CudaScanTest.TestKernel1/2" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/79 Testing: ScanRandomTests/CudaScanTest.TestKernel1/5
+4/79 Test: ScanRandomTests/CudaScanTest.TestKernel1/5
+Command: "/home/sviatoslav/course_project/build-release/tests/lib_tests" "--gtest_filter=ScanRandomTests/CudaScanTest.TestKernel1/2" "--gtest_also_run_disabled_tests"
+Directory: /home/sviatoslav/course_project/build-release/tests
+"ScanRandomTests/CudaScanTest.TestKernel1/5" start time: Jun 08 00:01 EEST
+Output:
+----------------------------------------------------------
+Running main() from /home/sviatoslav/course_project/build-release/_deps/googletest-src/googletest/src/gtest_main.cc
+[0;33mNote: Google Test filter = ScanRandomTests/CudaScanTest.TestKernel1/2
+[m[0;32m[==========] [mRunning 1 test from 1 test suite.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest
+[0;32m[ RUN      ] [mScanRandomTests/CudaScanTest.TestKernel1/2
+    ArrayTestFixture::SetUp() for size: 5
+[0;32m[       OK ] [mScanRandomTests/CudaScanTest.TestKernel1/2 (161 ms)
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest (161 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m1 test from 1 test suite ran. (161 ms total)
+[0;32m[  PASSED  ] [m1 test.
+<end of output>
+Test time =   0.25 sec
+----------------------------------------------------------
+Test Passed.
+"ScanRandomTests/CudaScanTest.TestKernel1/5" end time: Jun 08 00:01 EEST
+"ScanRandomTests/CudaScanTest.TestKernel1/5" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/79 Testing: ScanRandomTests/CudaScanTest.TestKernel1/10
+5/79 Test: ScanRandomTests/CudaScanTest.TestKernel1/10
+Command: "/home/sviatoslav/course_project/build-release/tests/lib_tests" "--gtest_filter=ScanRandomTests/CudaScanTest.TestKernel1/3" "--gtest_also_run_disabled_tests"
+Directory: /home/sviatoslav/course_project/build-release/tests
+"ScanRandomTests/CudaScanTest.TestKernel1/10" start time: Jun 08 00:01 EEST
+Output:
+----------------------------------------------------------
+Running main() from /home/sviatoslav/course_project/build-release/_deps/googletest-src/googletest/src/gtest_main.cc
+[0;33mNote: Google Test filter = ScanRandomTests/CudaScanTest.TestKernel1/3
+[m[0;32m[==========] [mRunning 1 test from 1 test suite.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest
+[0;32m[ RUN      ] [mScanRandomTests/CudaScanTest.TestKernel1/3
+    ArrayTestFixture::SetUp() for size: 10
+[0;32m[       OK ] [mScanRandomTests/CudaScanTest.TestKernel1/3 (134 ms)
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest (134 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m1 test from 1 test suite ran. (134 ms total)
+[0;32m[  PASSED  ] [m1 test.
+<end of output>
+Test time =   0.21 sec
+----------------------------------------------------------
+Test Passed.
+"ScanRandomTests/CudaScanTest.TestKernel1/10" end time: Jun 08 00:01 EEST
+"ScanRandomTests/CudaScanTest.TestKernel1/10" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/79 Testing: ScanRandomTests/CudaScanTest.TestKernel1/16
+6/79 Test: ScanRandomTests/CudaScanTest.TestKernel1/16
+Command: "/home/sviatoslav/course_project/build-release/tests/lib_tests" "--gtest_filter=ScanRandomTests/CudaScanTest.TestKernel1/4" "--gtest_also_run_disabled_tests"
+Directory: /home/sviatoslav/course_project/build-release/tests
+"ScanRandomTests/CudaScanTest.TestKernel1/16" start time: Jun 08 00:01 EEST
+Output:
+----------------------------------------------------------
+Running main() from /home/sviatoslav/course_project/build-release/_deps/googletest-src/googletest/src/gtest_main.cc
+[0;33mNote: Google Test filter = ScanRandomTests/CudaScanTest.TestKernel1/4
+[m[0;32m[==========] [mRunning 1 test from 1 test suite.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest
+[0;32m[ RUN      ] [mScanRandomTests/CudaScanTest.TestKernel1/4
+    ArrayTestFixture::SetUp() for size: 16
+[0;32m[       OK ] [mScanRandomTests/CudaScanTest.TestKernel1/4 (128 ms)
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest (128 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m1 test from 1 test suite ran. (128 ms total)
+[0;32m[  PASSED  ] [m1 test.
+<end of output>
+Test time =   0.20 sec
+----------------------------------------------------------
+Test Passed.
+"ScanRandomTests/CudaScanTest.TestKernel1/16" end time: Jun 08 00:01 EEST
+"ScanRandomTests/CudaScanTest.TestKernel1/16" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/79 Testing: ScanRandomTests/CudaScanTest.TestKernel1/19
+7/79 Test: ScanRandomTests/CudaScanTest.TestKernel1/19
+Command: "/home/sviatoslav/course_project/build-release/tests/lib_tests" "--gtest_filter=ScanRandomTests/CudaScanTest.TestKernel1/5" "--gtest_also_run_disabled_tests"
+Directory: /home/sviatoslav/course_project/build-release/tests
+"ScanRandomTests/CudaScanTest.TestKernel1/19" start time: Jun 08 00:01 EEST
+Output:
+----------------------------------------------------------
+Running main() from /home/sviatoslav/course_project/build-release/_deps/googletest-src/googletest/src/gtest_main.cc
+[0;33mNote: Google Test filter = ScanRandomTests/CudaScanTest.TestKernel1/5
+[m[0;32m[==========] [mRunning 1 test from 1 test suite.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest
+[0;32m[ RUN      ] [mScanRandomTests/CudaScanTest.TestKernel1/5
+    ArrayTestFixture::SetUp() for size: 19
+[0;32m[       OK ] [mScanRandomTests/CudaScanTest.TestKernel1/5 (128 ms)
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest (128 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m1 test from 1 test suite ran. (128 ms total)
+[0;32m[  PASSED  ] [m1 test.
+<end of output>
+Test time =   0.20 sec
+----------------------------------------------------------
+Test Passed.
+"ScanRandomTests/CudaScanTest.TestKernel1/19" end time: Jun 08 00:01 EEST
+"ScanRandomTests/CudaScanTest.TestKernel1/19" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/79 Testing: ScanRandomTests/CudaScanTest.TestKernel1/27
+8/79 Test: ScanRandomTests/CudaScanTest.TestKernel1/27
+Command: "/home/sviatoslav/course_project/build-release/tests/lib_tests" "--gtest_filter=ScanRandomTests/CudaScanTest.TestKernel1/6" "--gtest_also_run_disabled_tests"
+Directory: /home/sviatoslav/course_project/build-release/tests
+"ScanRandomTests/CudaScanTest.TestKernel1/27" start time: Jun 08 00:01 EEST
+Output:
+----------------------------------------------------------
+Running main() from /home/sviatoslav/course_project/build-release/_deps/googletest-src/googletest/src/gtest_main.cc
+[0;33mNote: Google Test filter = ScanRandomTests/CudaScanTest.TestKernel1/6
+[m[0;32m[==========] [mRunning 1 test from 1 test suite.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest
+[0;32m[ RUN      ] [mScanRandomTests/CudaScanTest.TestKernel1/6
+    ArrayTestFixture::SetUp() for size: 27
+[0;32m[       OK ] [mScanRandomTests/CudaScanTest.TestKernel1/6 (134 ms)
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest (134 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m1 test from 1 test suite ran. (134 ms total)
+[0;32m[  PASSED  ] [m1 test.
+<end of output>
+Test time =   0.21 sec
+----------------------------------------------------------
+Test Passed.
+"ScanRandomTests/CudaScanTest.TestKernel1/27" end time: Jun 08 00:01 EEST
+"ScanRandomTests/CudaScanTest.TestKernel1/27" time elapsed: 00:00:00
+----------------------------------------------------------
+
+9/79 Testing: ScanRandomTests/CudaScanTest.TestKernel1/46
+9/79 Test: ScanRandomTests/CudaScanTest.TestKernel1/46
+Command: "/home/sviatoslav/course_project/build-release/tests/lib_tests" "--gtest_filter=ScanRandomTests/CudaScanTest.TestKernel1/7" "--gtest_also_run_disabled_tests"
+Directory: /home/sviatoslav/course_project/build-release/tests
+"ScanRandomTests/CudaScanTest.TestKernel1/46" start time: Jun 08 00:01 EEST
+Output:
+----------------------------------------------------------
+Running main() from /home/sviatoslav/course_project/build-release/_deps/googletest-src/googletest/src/gtest_main.cc
+[0;33mNote: Google Test filter = ScanRandomTests/CudaScanTest.TestKernel1/7
+[m[0;32m[==========] [mRunning 1 test from 1 test suite.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest
+[0;32m[ RUN      ] [mScanRandomTests/CudaScanTest.TestKernel1/7
+    ArrayTestFixture::SetUp() for size: 46
+[0;32m[       OK ] [mScanRandomTests/CudaScanTest.TestKernel1/7 (155 ms)
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest (155 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m1 test from 1 test suite ran. (155 ms total)
+[0;32m[  PASSED  ] [m1 test.
+<end of output>
+Test time =   0.23 sec
+----------------------------------------------------------
+Test Passed.
+"ScanRandomTests/CudaScanTest.TestKernel1/46" end time: Jun 08 00:01 EEST
+"ScanRandomTests/CudaScanTest.TestKernel1/46" time elapsed: 00:00:00
+----------------------------------------------------------
+
+10/79 Testing: ScanRandomTests/CudaScanTest.TestKernel1/74
+10/79 Test: ScanRandomTests/CudaScanTest.TestKernel1/74
+Command: "/home/sviatoslav/course_project/build-release/tests/lib_tests" "--gtest_filter=ScanRandomTests/CudaScanTest.TestKernel1/8" "--gtest_also_run_disabled_tests"
+Directory: /home/sviatoslav/course_project/build-release/tests
+"ScanRandomTests/CudaScanTest.TestKernel1/74" start time: Jun 08 00:01 EEST
+Output:
+----------------------------------------------------------
+Running main() from /home/sviatoslav/course_project/build-release/_deps/googletest-src/googletest/src/gtest_main.cc
+[0;33mNote: Google Test filter = ScanRandomTests/CudaScanTest.TestKernel1/8
+[m[0;32m[==========] [mRunning 1 test from 1 test suite.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest
+[0;32m[ RUN      ] [mScanRandomTests/CudaScanTest.TestKernel1/8
+    ArrayTestFixture::SetUp() for size: 74
+[0;32m[       OK ] [mScanRandomTests/CudaScanTest.TestKernel1/8 (132 ms)
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest (132 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m1 test from 1 test suite ran. (132 ms total)
+[0;32m[  PASSED  ] [m1 test.
+<end of output>
+Test time =   0.21 sec
+----------------------------------------------------------
+Test Passed.
+"ScanRandomTests/CudaScanTest.TestKernel1/74" end time: Jun 08 00:01 EEST
+"ScanRandomTests/CudaScanTest.TestKernel1/74" time elapsed: 00:00:00
+----------------------------------------------------------
+
+11/79 Testing: ScanRandomTests/CudaScanTest.TestKernel1/123
+11/79 Test: ScanRandomTests/CudaScanTest.TestKernel1/123
+Command: "/home/sviatoslav/course_project/build-release/tests/lib_tests" "--gtest_filter=ScanRandomTests/CudaScanTest.TestKernel1/9" "--gtest_also_run_disabled_tests"
+Directory: /home/sviatoslav/course_project/build-release/tests
+"ScanRandomTests/CudaScanTest.TestKernel1/123" start time: Jun 08 00:01 EEST
+Output:
+----------------------------------------------------------
+Running main() from /home/sviatoslav/course_project/build-release/_deps/googletest-src/googletest/src/gtest_main.cc
+[0;33mNote: Google Test filter = ScanRandomTests/CudaScanTest.TestKernel1/9
+[m[0;32m[==========] [mRunning 1 test from 1 test suite.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest
+[0;32m[ RUN      ] [mScanRandomTests/CudaScanTest.TestKernel1/9
+    ArrayTestFixture::SetUp() for size: 123
+[0;32m[       OK ] [mScanRandomTests/CudaScanTest.TestKernel1/9 (133 ms)
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest (133 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m1 test from 1 test suite ran. (134 ms total)
+[0;32m[  PASSED  ] [m1 test.
+<end of output>
+Test time =   0.21 sec
+----------------------------------------------------------
+Test Passed.
+"ScanRandomTests/CudaScanTest.TestKernel1/123" end time: Jun 08 00:01 EEST
+"ScanRandomTests/CudaScanTest.TestKernel1/123" time elapsed: 00:00:00
+----------------------------------------------------------
+
+12/79 Testing: ScanRandomTests/CudaScanTest.TestKernel1/189
+12/79 Test: ScanRandomTests/CudaScanTest.TestKernel1/189
+Command: "/home/sviatoslav/course_project/build-release/tests/lib_tests" "--gtest_filter=ScanRandomTests/CudaScanTest.TestKernel1/10" "--gtest_also_run_disabled_tests"
+Directory: /home/sviatoslav/course_project/build-release/tests
+"ScanRandomTests/CudaScanTest.TestKernel1/189" start time: Jun 08 00:01 EEST
+Output:
+----------------------------------------------------------
+Running main() from /home/sviatoslav/course_project/build-release/_deps/googletest-src/googletest/src/gtest_main.cc
+[0;33mNote: Google Test filter = ScanRandomTests/CudaScanTest.TestKernel1/10
+[m[0;32m[==========] [mRunning 1 test from 1 test suite.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest
+[0;32m[ RUN      ] [mScanRandomTests/CudaScanTest.TestKernel1/10
+    ArrayTestFixture::SetUp() for size: 189
+[0;32m[       OK ] [mScanRandomTests/CudaScanTest.TestKernel1/10 (128 ms)
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest (128 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m1 test from 1 test suite ran. (128 ms total)
+[0;32m[  PASSED  ] [m1 test.
+<end of output>
+Test time =   0.20 sec
+----------------------------------------------------------
+Test Passed.
+"ScanRandomTests/CudaScanTest.TestKernel1/189" end time: Jun 08 00:01 EEST
+"ScanRandomTests/CudaScanTest.TestKernel1/189" time elapsed: 00:00:00
+----------------------------------------------------------
+
+13/79 Testing: ScanRandomTests/CudaScanTest.TestKernel1/346
+13/79 Test: ScanRandomTests/CudaScanTest.TestKernel1/346
+Command: "/home/sviatoslav/course_project/build-release/tests/lib_tests" "--gtest_filter=ScanRandomTests/CudaScanTest.TestKernel1/11" "--gtest_also_run_disabled_tests"
+Directory: /home/sviatoslav/course_project/build-release/tests
+"ScanRandomTests/CudaScanTest.TestKernel1/346" start time: Jun 08 00:01 EEST
+Output:
+----------------------------------------------------------
+Running main() from /home/sviatoslav/course_project/build-release/_deps/googletest-src/googletest/src/gtest_main.cc
+[0;33mNote: Google Test filter = ScanRandomTests/CudaScanTest.TestKernel1/11
+[m[0;32m[==========] [mRunning 1 test from 1 test suite.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest
+[0;32m[ RUN      ] [mScanRandomTests/CudaScanTest.TestKernel1/11
+    ArrayTestFixture::SetUp() for size: 346
+[0;32m[       OK ] [mScanRandomTests/CudaScanTest.TestKernel1/11 (129 ms)
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest (129 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m1 test from 1 test suite ran. (129 ms total)
+[0;32m[  PASSED  ] [m1 test.
+<end of output>
+Test time =   0.20 sec
+----------------------------------------------------------
+Test Passed.
+"ScanRandomTests/CudaScanTest.TestKernel1/346" end time: Jun 08 00:01 EEST
+"ScanRandomTests/CudaScanTest.TestKernel1/346" time elapsed: 00:00:00
+----------------------------------------------------------
+
+14/79 Testing: ScanRandomTests/CudaScanTest.TestKernel1/786
+14/79 Test: ScanRandomTests/CudaScanTest.TestKernel1/786
+Command: "/home/sviatoslav/course_project/build-release/tests/lib_tests" "--gtest_filter=ScanRandomTests/CudaScanTest.TestKernel1/12" "--gtest_also_run_disabled_tests"
+Directory: /home/sviatoslav/course_project/build-release/tests
+"ScanRandomTests/CudaScanTest.TestKernel1/786" start time: Jun 08 00:01 EEST
+Output:
+----------------------------------------------------------
+Running main() from /home/sviatoslav/course_project/build-release/_deps/googletest-src/googletest/src/gtest_main.cc
+[0;33mNote: Google Test filter = ScanRandomTests/CudaScanTest.TestKernel1/12
+[m[0;32m[==========] [mRunning 1 test from 1 test suite.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest
+[0;32m[ RUN      ] [mScanRandomTests/CudaScanTest.TestKernel1/12
+    ArrayTestFixture::SetUp() for size: 786
+[0;32m[       OK ] [mScanRandomTests/CudaScanTest.TestKernel1/12 (146 ms)
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest (147 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m1 test from 1 test suite ran. (147 ms total)
+[0;32m[  PASSED  ] [m1 test.
+<end of output>
+Test time =   0.22 sec
+----------------------------------------------------------
+Test Passed.
+"ScanRandomTests/CudaScanTest.TestKernel1/786" end time: Jun 08 00:01 EEST
+"ScanRandomTests/CudaScanTest.TestKernel1/786" time elapsed: 00:00:00
+----------------------------------------------------------
+
+15/79 Testing: ScanRandomTests/CudaScanTest.TestKernel1/1024
+15/79 Test: ScanRandomTests/CudaScanTest.TestKernel1/1024
+Command: "/home/sviatoslav/course_project/build-release/tests/lib_tests" "--gtest_filter=ScanRandomTests/CudaScanTest.TestKernel1/13" "--gtest_also_run_disabled_tests"
+Directory: /home/sviatoslav/course_project/build-release/tests
+"ScanRandomTests/CudaScanTest.TestKernel1/1024" start time: Jun 08 00:01 EEST
+Output:
+----------------------------------------------------------
+Running main() from /home/sviatoslav/course_project/build-release/_deps/googletest-src/googletest/src/gtest_main.cc
+[0;33mNote: Google Test filter = ScanRandomTests/CudaScanTest.TestKernel1/13
+[m[0;32m[==========] [mRunning 1 test from 1 test suite.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest
+[0;32m[ RUN      ] [mScanRandomTests/CudaScanTest.TestKernel1/13
+    ArrayTestFixture::SetUp() for size: 1024
+[0;32m[       OK ] [mScanRandomTests/CudaScanTest.TestKernel1/13 (128 ms)
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest (128 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m1 test from 1 test suite ran. (128 ms total)
+[0;32m[  PASSED  ] [m1 test.
+<end of output>
+Test time =   0.20 sec
+----------------------------------------------------------
+Test Passed.
+"ScanRandomTests/CudaScanTest.TestKernel1/1024" end time: Jun 08 00:01 EEST
+"ScanRandomTests/CudaScanTest.TestKernel1/1024" time elapsed: 00:00:00
+----------------------------------------------------------
+
+16/79 Testing: ScanRandomTests/CudaScanTest.TestKernel1/2048
+16/79 Test: ScanRandomTests/CudaScanTest.TestKernel1/2048
+Command: "/home/sviatoslav/course_project/build-release/tests/lib_tests" "--gtest_filter=ScanRandomTests/CudaScanTest.TestKernel1/14" "--gtest_also_run_disabled_tests"
+Directory: /home/sviatoslav/course_project/build-release/tests
+"ScanRandomTests/CudaScanTest.TestKernel1/2048" start time: Jun 08 00:01 EEST
+Output:
+----------------------------------------------------------
+Running main() from /home/sviatoslav/course_project/build-release/_deps/googletest-src/googletest/src/gtest_main.cc
+[0;33mNote: Google Test filter = ScanRandomTests/CudaScanTest.TestKernel1/14
+[m[0;32m[==========] [mRunning 1 test from 1 test suite.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest
+[0;32m[ RUN      ] [mScanRandomTests/CudaScanTest.TestKernel1/14
+    ArrayTestFixture::SetUp() for size: 2048
+[0;32m[       OK ] [mScanRandomTests/CudaScanTest.TestKernel1/14 (128 ms)
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest (128 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m1 test from 1 test suite ran. (128 ms total)
+[0;32m[  PASSED  ] [m1 test.
+<end of output>
+Test time =   0.20 sec
+----------------------------------------------------------
+Test Passed.
+"ScanRandomTests/CudaScanTest.TestKernel1/2048" end time: Jun 08 00:01 EEST
+"ScanRandomTests/CudaScanTest.TestKernel1/2048" time elapsed: 00:00:00
+----------------------------------------------------------
+
+17/79 Testing: ScanRandomTests/CudaScanTest.TestKernel1/4657
+17/79 Test: ScanRandomTests/CudaScanTest.TestKernel1/4657
+Command: "/home/sviatoslav/course_project/build-release/tests/lib_tests" "--gtest_filter=ScanRandomTests/CudaScanTest.TestKernel1/15" "--gtest_also_run_disabled_tests"
+Directory: /home/sviatoslav/course_project/build-release/tests
+"ScanRandomTests/CudaScanTest.TestKernel1/4657" start time: Jun 08 00:01 EEST
+Output:
+----------------------------------------------------------
+Running main() from /home/sviatoslav/course_project/build-release/_deps/googletest-src/googletest/src/gtest_main.cc
+[0;33mNote: Google Test filter = ScanRandomTests/CudaScanTest.TestKernel1/15
+[m[0;32m[==========] [mRunning 1 test from 1 test suite.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest
+[0;32m[ RUN      ] [mScanRandomTests/CudaScanTest.TestKernel1/15
+    ArrayTestFixture::SetUp() for size: 4657
+[0;32m[       OK ] [mScanRandomTests/CudaScanTest.TestKernel1/15 (130 ms)
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest (130 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m1 test from 1 test suite ran. (130 ms total)
+[0;32m[  PASSED  ] [m1 test.
+<end of output>
+Test time =   0.20 sec
+----------------------------------------------------------
+Test Passed.
+"ScanRandomTests/CudaScanTest.TestKernel1/4657" end time: Jun 08 00:01 EEST
+"ScanRandomTests/CudaScanTest.TestKernel1/4657" time elapsed: 00:00:00
+----------------------------------------------------------
+
+18/79 Testing: ScanRandomTests/CudaScanTest.TestKernel1/14765
+18/79 Test: ScanRandomTests/CudaScanTest.TestKernel1/14765
+Command: "/home/sviatoslav/course_project/build-release/tests/lib_tests" "--gtest_filter=ScanRandomTests/CudaScanTest.TestKernel1/16" "--gtest_also_run_disabled_tests"
+Directory: /home/sviatoslav/course_project/build-release/tests
+"ScanRandomTests/CudaScanTest.TestKernel1/14765" start time: Jun 08 00:01 EEST
+Output:
+----------------------------------------------------------
+Running main() from /home/sviatoslav/course_project/build-release/_deps/googletest-src/googletest/src/gtest_main.cc
+[0;33mNote: Google Test filter = ScanRandomTests/CudaScanTest.TestKernel1/16
+[m[0;32m[==========] [mRunning 1 test from 1 test suite.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest
+[0;32m[ RUN      ] [mScanRandomTests/CudaScanTest.TestKernel1/16
+    ArrayTestFixture::SetUp() for size: 14765
+[0;32m[       OK ] [mScanRandomTests/CudaScanTest.TestKernel1/16 (130 ms)
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest (130 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m1 test from 1 test suite ran. (130 ms total)
+[0;32m[  PASSED  ] [m1 test.
+<end of output>
+Test time =   0.20 sec
+----------------------------------------------------------
+Test Passed.
+"ScanRandomTests/CudaScanTest.TestKernel1/14765" end time: Jun 08 00:01 EEST
+"ScanRandomTests/CudaScanTest.TestKernel1/14765" time elapsed: 00:00:00
+----------------------------------------------------------
+
+19/79 Testing: ScanRandomTests/CudaScanTest.TestKernel1/146873
+19/79 Test: ScanRandomTests/CudaScanTest.TestKernel1/146873
+Command: "/home/sviatoslav/course_project/build-release/tests/lib_tests" "--gtest_filter=ScanRandomTests/CudaScanTest.TestKernel1/17" "--gtest_also_run_disabled_tests"
+Directory: /home/sviatoslav/course_project/build-release/tests
+"ScanRandomTests/CudaScanTest.TestKernel1/146873" start time: Jun 08 00:01 EEST
+Output:
+----------------------------------------------------------
+Running main() from /home/sviatoslav/course_project/build-release/_deps/googletest-src/googletest/src/gtest_main.cc
+[0;33mNote: Google Test filter = ScanRandomTests/CudaScanTest.TestKernel1/17
+[m[0;32m[==========] [mRunning 1 test from 1 test suite.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest
+[0;32m[ RUN      ] [mScanRandomTests/CudaScanTest.TestKernel1/17
+    ArrayTestFixture::SetUp() for size: 146873
+[0;32m[       OK ] [mScanRandomTests/CudaScanTest.TestKernel1/17 (151 ms)
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest (151 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m1 test from 1 test suite ran. (151 ms total)
+[0;32m[  PASSED  ] [m1 test.
+<end of output>
+Test time =   0.23 sec
+----------------------------------------------------------
+Test Passed.
+"ScanRandomTests/CudaScanTest.TestKernel1/146873" end time: Jun 08 00:01 EEST
+"ScanRandomTests/CudaScanTest.TestKernel1/146873" time elapsed: 00:00:00
+----------------------------------------------------------
+
+20/79 Testing: ScanRandomTests/CudaScanTest.TestKernel1/65536
+20/79 Test: ScanRandomTests/CudaScanTest.TestKernel1/65536
+Command: "/home/sviatoslav/course_project/build-release/tests/lib_tests" "--gtest_filter=ScanRandomTests/CudaScanTest.TestKernel1/18" "--gtest_also_run_disabled_tests"
+Directory: /home/sviatoslav/course_project/build-release/tests
+"ScanRandomTests/CudaScanTest.TestKernel1/65536" start time: Jun 08 00:01 EEST
+Output:
+----------------------------------------------------------
+Running main() from /home/sviatoslav/course_project/build-release/_deps/googletest-src/googletest/src/gtest_main.cc
+[0;33mNote: Google Test filter = ScanRandomTests/CudaScanTest.TestKernel1/18
+[m[0;32m[==========] [mRunning 1 test from 1 test suite.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest
+[0;32m[ RUN      ] [mScanRandomTests/CudaScanTest.TestKernel1/18
+    ArrayTestFixture::SetUp() for size: 65536
+[0;32m[       OK ] [mScanRandomTests/CudaScanTest.TestKernel1/18 (134 ms)
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest (134 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m1 test from 1 test suite ran. (134 ms total)
+[0;32m[  PASSED  ] [m1 test.
+<end of output>
+Test time =   0.21 sec
+----------------------------------------------------------
+Test Passed.
+"ScanRandomTests/CudaScanTest.TestKernel1/65536" end time: Jun 08 00:01 EEST
+"ScanRandomTests/CudaScanTest.TestKernel1/65536" time elapsed: 00:00:00
+----------------------------------------------------------
+
+21/79 Testing: ScanRandomTests/CudaScanTest.TestKernel1/131034
+21/79 Test: ScanRandomTests/CudaScanTest.TestKernel1/131034
+Command: "/home/sviatoslav/course_project/build-release/tests/lib_tests" "--gtest_filter=ScanRandomTests/CudaScanTest.TestKernel1/19" "--gtest_also_run_disabled_tests"
+Directory: /home/sviatoslav/course_project/build-release/tests
+"ScanRandomTests/CudaScanTest.TestKernel1/131034" start time: Jun 08 00:01 EEST
+Output:
+----------------------------------------------------------
+Running main() from /home/sviatoslav/course_project/build-release/_deps/googletest-src/googletest/src/gtest_main.cc
+[0;33mNote: Google Test filter = ScanRandomTests/CudaScanTest.TestKernel1/19
+[m[0;32m[==========] [mRunning 1 test from 1 test suite.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest
+[0;32m[ RUN      ] [mScanRandomTests/CudaScanTest.TestKernel1/19
+    ArrayTestFixture::SetUp() for size: 131034
+[0;32m[       OK ] [mScanRandomTests/CudaScanTest.TestKernel1/19 (130 ms)
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest (130 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m1 test from 1 test suite ran. (130 ms total)
+[0;32m[  PASSED  ] [m1 test.
+<end of output>
+Test time =   0.20 sec
+----------------------------------------------------------
+Test Passed.
+"ScanRandomTests/CudaScanTest.TestKernel1/131034" end time: Jun 08 00:01 EEST
+"ScanRandomTests/CudaScanTest.TestKernel1/131034" time elapsed: 00:00:00
+----------------------------------------------------------
+
+22/79 Testing: ScanRandomTests/CudaScanTest.TestKernel1/262193
+22/79 Test: ScanRandomTests/CudaScanTest.TestKernel1/262193
+Command: "/home/sviatoslav/course_project/build-release/tests/lib_tests" "--gtest_filter=ScanRandomTests/CudaScanTest.TestKernel1/20" "--gtest_also_run_disabled_tests"
+Directory: /home/sviatoslav/course_project/build-release/tests
+"ScanRandomTests/CudaScanTest.TestKernel1/262193" start time: Jun 08 00:01 EEST
+Output:
+----------------------------------------------------------
+Running main() from /home/sviatoslav/course_project/build-release/_deps/googletest-src/googletest/src/gtest_main.cc
+[0;33mNote: Google Test filter = ScanRandomTests/CudaScanTest.TestKernel1/20
+[m[0;32m[==========] [mRunning 1 test from 1 test suite.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest
+[0;32m[ RUN      ] [mScanRandomTests/CudaScanTest.TestKernel1/20
+    ArrayTestFixture::SetUp() for size: 262193
+[0;32m[       OK ] [mScanRandomTests/CudaScanTest.TestKernel1/20 (132 ms)
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest (132 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m1 test from 1 test suite ran. (132 ms total)
+[0;32m[  PASSED  ] [m1 test.
+<end of output>
+Test time =   0.21 sec
+----------------------------------------------------------
+Test Passed.
+"ScanRandomTests/CudaScanTest.TestKernel1/262193" end time: Jun 08 00:01 EEST
+"ScanRandomTests/CudaScanTest.TestKernel1/262193" time elapsed: 00:00:00
+----------------------------------------------------------
+
+23/79 Testing: ScanRandomTests/CudaScanTest.TestKernel1/1048577
+23/79 Test: ScanRandomTests/CudaScanTest.TestKernel1/1048577
+Command: "/home/sviatoslav/course_project/build-release/tests/lib_tests" "--gtest_filter=ScanRandomTests/CudaScanTest.TestKernel1/21" "--gtest_also_run_disabled_tests"
+Directory: /home/sviatoslav/course_project/build-release/tests
+"ScanRandomTests/CudaScanTest.TestKernel1/1048577" start time: Jun 08 00:01 EEST
+Output:
+----------------------------------------------------------
+Running main() from /home/sviatoslav/course_project/build-release/_deps/googletest-src/googletest/src/gtest_main.cc
+[0;33mNote: Google Test filter = ScanRandomTests/CudaScanTest.TestKernel1/21
+[m[0;32m[==========] [mRunning 1 test from 1 test suite.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest
+[0;32m[ RUN      ] [mScanRandomTests/CudaScanTest.TestKernel1/21
+    ArrayTestFixture::SetUp() for size: 1048577
+[0;32m[       OK ] [mScanRandomTests/CudaScanTest.TestKernel1/21 (141 ms)
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest (141 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m1 test from 1 test suite ran. (141 ms total)
+[0;32m[  PASSED  ] [m1 test.
+<end of output>
+Test time =   0.23 sec
+----------------------------------------------------------
+Test Passed.
+"ScanRandomTests/CudaScanTest.TestKernel1/1048577" end time: Jun 08 00:01 EEST
+"ScanRandomTests/CudaScanTest.TestKernel1/1048577" time elapsed: 00:00:00
+----------------------------------------------------------
+
+24/79 Testing: ScanRandomTests/CudaScanTest.TestKernel1/2097151
+24/79 Test: ScanRandomTests/CudaScanTest.TestKernel1/2097151
+Command: "/home/sviatoslav/course_project/build-release/tests/lib_tests" "--gtest_filter=ScanRandomTests/CudaScanTest.TestKernel1/22" "--gtest_also_run_disabled_tests"
+Directory: /home/sviatoslav/course_project/build-release/tests
+"ScanRandomTests/CudaScanTest.TestKernel1/2097151" start time: Jun 08 00:01 EEST
+Output:
+----------------------------------------------------------
+Running main() from /home/sviatoslav/course_project/build-release/_deps/googletest-src/googletest/src/gtest_main.cc
+[0;33mNote: Google Test filter = ScanRandomTests/CudaScanTest.TestKernel1/22
+[m[0;32m[==========] [mRunning 1 test from 1 test suite.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest
+[0;32m[ RUN      ] [mScanRandomTests/CudaScanTest.TestKernel1/22
+    ArrayTestFixture::SetUp() for size: 2097151
+[0;32m[       OK ] [mScanRandomTests/CudaScanTest.TestKernel1/22 (154 ms)
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest (154 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m1 test from 1 test suite ran. (154 ms total)
+[0;32m[  PASSED  ] [m1 test.
+<end of output>
+Test time =   0.23 sec
+----------------------------------------------------------
+Test Passed.
+"ScanRandomTests/CudaScanTest.TestKernel1/2097151" end time: Jun 08 00:01 EEST
+"ScanRandomTests/CudaScanTest.TestKernel1/2097151" time elapsed: 00:00:00
+----------------------------------------------------------
+
+25/79 Testing: ScanRandomTests/CudaScanTest.TestKernel1/4194538
+25/79 Test: ScanRandomTests/CudaScanTest.TestKernel1/4194538
+Command: "/home/sviatoslav/course_project/build-release/tests/lib_tests" "--gtest_filter=ScanRandomTests/CudaScanTest.TestKernel1/23" "--gtest_also_run_disabled_tests"
+Directory: /home/sviatoslav/course_project/build-release/tests
+"ScanRandomTests/CudaScanTest.TestKernel1/4194538" start time: Jun 08 00:01 EEST
+Output:
+----------------------------------------------------------
+Running main() from /home/sviatoslav/course_project/build-release/_deps/googletest-src/googletest/src/gtest_main.cc
+[0;33mNote: Google Test filter = ScanRandomTests/CudaScanTest.TestKernel1/23
+[m[0;32m[==========] [mRunning 1 test from 1 test suite.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest
+[0;32m[ RUN      ] [mScanRandomTests/CudaScanTest.TestKernel1/23
+    ArrayTestFixture::SetUp() for size: 4194538
+[0;32m[       OK ] [mScanRandomTests/CudaScanTest.TestKernel1/23 (177 ms)
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest (177 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m1 test from 1 test suite ran. (177 ms total)
+[0;32m[  PASSED  ] [m1 test.
+<end of output>
+Test time =   0.25 sec
+----------------------------------------------------------
+Test Passed.
+"ScanRandomTests/CudaScanTest.TestKernel1/4194538" end time: Jun 08 00:01 EEST
+"ScanRandomTests/CudaScanTest.TestKernel1/4194538" time elapsed: 00:00:00
+----------------------------------------------------------
+
+26/79 Testing: ScanRandomTests/CudaScanTest.TestKernel1/33554510
+26/79 Test: ScanRandomTests/CudaScanTest.TestKernel1/33554510
+Command: "/home/sviatoslav/course_project/build-release/tests/lib_tests" "--gtest_filter=ScanRandomTests/CudaScanTest.TestKernel1/24" "--gtest_also_run_disabled_tests"
+Directory: /home/sviatoslav/course_project/build-release/tests
+"ScanRandomTests/CudaScanTest.TestKernel1/33554510" start time: Jun 08 00:01 EEST
+Output:
+----------------------------------------------------------
+Running main() from /home/sviatoslav/course_project/build-release/_deps/googletest-src/googletest/src/gtest_main.cc
+[0;33mNote: Google Test filter = ScanRandomTests/CudaScanTest.TestKernel1/24
+[m[0;32m[==========] [mRunning 1 test from 1 test suite.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest
+[0;32m[ RUN      ] [mScanRandomTests/CudaScanTest.TestKernel1/24
+    ArrayTestFixture::SetUp() for size: 33554510
+[0;32m[       OK ] [mScanRandomTests/CudaScanTest.TestKernel1/24 (502 ms)
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest (502 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m1 test from 1 test suite ran. (502 ms total)
+[0;32m[  PASSED  ] [m1 test.
+<end of output>
+Test time =   0.59 sec
+----------------------------------------------------------
+Test Passed.
+"ScanRandomTests/CudaScanTest.TestKernel1/33554510" end time: Jun 08 00:01 EEST
+"ScanRandomTests/CudaScanTest.TestKernel1/33554510" time elapsed: 00:00:00
+----------------------------------------------------------
+
+27/79 Testing: ScanRandomTests/CudaScanTest.TestKernel1/536735925
+27/79 Test: ScanRandomTests/CudaScanTest.TestKernel1/536735925
+Command: "/home/sviatoslav/course_project/build-release/tests/lib_tests" "--gtest_filter=ScanRandomTests/CudaScanTest.TestKernel1/25" "--gtest_also_run_disabled_tests"
+Directory: /home/sviatoslav/course_project/build-release/tests
+"ScanRandomTests/CudaScanTest.TestKernel1/536735925" start time: Jun 08 00:01 EEST
+Output:
+----------------------------------------------------------
+Running main() from /home/sviatoslav/course_project/build-release/_deps/googletest-src/googletest/src/gtest_main.cc
+[0;33mNote: Google Test filter = ScanRandomTests/CudaScanTest.TestKernel1/25
+[m[0;32m[==========] [mRunning 1 test from 1 test suite.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest
+[0;32m[ RUN      ] [mScanRandomTests/CudaScanTest.TestKernel1/25
+    ArrayTestFixture::SetUp() for size: 536735925
+[0;32m[       OK ] [mScanRandomTests/CudaScanTest.TestKernel1/25 (5708 ms)
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest (5708 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m1 test from 1 test suite ran. (5708 ms total)
+[0;32m[  PASSED  ] [m1 test.
+<end of output>
+Test time =   5.79 sec
+----------------------------------------------------------
+Test Passed.
+"ScanRandomTests/CudaScanTest.TestKernel1/536735925" end time: Jun 08 00:01 EEST
+"ScanRandomTests/CudaScanTest.TestKernel1/536735925" time elapsed: 00:00:05
+----------------------------------------------------------
+
+28/79 Testing: ScanRandomTests/CudaScanTest.TestKernel2/1
+28/79 Test: ScanRandomTests/CudaScanTest.TestKernel2/1
+Command: "/home/sviatoslav/course_project/build-release/tests/lib_tests" "--gtest_filter=ScanRandomTests/CudaScanTest.TestKernel2/0" "--gtest_also_run_disabled_tests"
+Directory: /home/sviatoslav/course_project/build-release/tests
+"ScanRandomTests/CudaScanTest.TestKernel2/1" start time: Jun 08 00:01 EEST
+Output:
+----------------------------------------------------------
+Running main() from /home/sviatoslav/course_project/build-release/_deps/googletest-src/googletest/src/gtest_main.cc
+[0;33mNote: Google Test filter = ScanRandomTests/CudaScanTest.TestKernel2/0
+[m[0;32m[==========] [mRunning 1 test from 1 test suite.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest
+[0;32m[ RUN      ] [mScanRandomTests/CudaScanTest.TestKernel2/0
+    ArrayTestFixture::SetUp() for size: 1
+[0;32m[       OK ] [mScanRandomTests/CudaScanTest.TestKernel2/0 (146 ms)
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest (146 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m1 test from 1 test suite ran. (146 ms total)
+[0;32m[  PASSED  ] [m1 test.
+<end of output>
+Test time =   0.23 sec
+----------------------------------------------------------
+Test Passed.
+"ScanRandomTests/CudaScanTest.TestKernel2/1" end time: Jun 08 00:01 EEST
+"ScanRandomTests/CudaScanTest.TestKernel2/1" time elapsed: 00:00:00
+----------------------------------------------------------
+
+29/79 Testing: ScanRandomTests/CudaScanTest.TestKernel2/2
+29/79 Test: ScanRandomTests/CudaScanTest.TestKernel2/2
+Command: "/home/sviatoslav/course_project/build-release/tests/lib_tests" "--gtest_filter=ScanRandomTests/CudaScanTest.TestKernel2/1" "--gtest_also_run_disabled_tests"
+Directory: /home/sviatoslav/course_project/build-release/tests
+"ScanRandomTests/CudaScanTest.TestKernel2/2" start time: Jun 08 00:01 EEST
+Output:
+----------------------------------------------------------
+Running main() from /home/sviatoslav/course_project/build-release/_deps/googletest-src/googletest/src/gtest_main.cc
+[0;33mNote: Google Test filter = ScanRandomTests/CudaScanTest.TestKernel2/1
+[m[0;32m[==========] [mRunning 1 test from 1 test suite.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest
+[0;32m[ RUN      ] [mScanRandomTests/CudaScanTest.TestKernel2/1
+    ArrayTestFixture::SetUp() for size: 2
+[0;32m[       OK ] [mScanRandomTests/CudaScanTest.TestKernel2/1 (152 ms)
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest (152 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m1 test from 1 test suite ran. (153 ms total)
+[0;32m[  PASSED  ] [m1 test.
+<end of output>
+Test time =   0.23 sec
+----------------------------------------------------------
+Test Passed.
+"ScanRandomTests/CudaScanTest.TestKernel2/2" end time: Jun 08 00:01 EEST
+"ScanRandomTests/CudaScanTest.TestKernel2/2" time elapsed: 00:00:00
+----------------------------------------------------------
+
+30/79 Testing: ScanRandomTests/CudaScanTest.TestKernel2/5
+30/79 Test: ScanRandomTests/CudaScanTest.TestKernel2/5
+Command: "/home/sviatoslav/course_project/build-release/tests/lib_tests" "--gtest_filter=ScanRandomTests/CudaScanTest.TestKernel2/2" "--gtest_also_run_disabled_tests"
+Directory: /home/sviatoslav/course_project/build-release/tests
+"ScanRandomTests/CudaScanTest.TestKernel2/5" start time: Jun 08 00:01 EEST
+Output:
+----------------------------------------------------------
+Running main() from /home/sviatoslav/course_project/build-release/_deps/googletest-src/googletest/src/gtest_main.cc
+[0;33mNote: Google Test filter = ScanRandomTests/CudaScanTest.TestKernel2/2
+[m[0;32m[==========] [mRunning 1 test from 1 test suite.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest
+[0;32m[ RUN      ] [mScanRandomTests/CudaScanTest.TestKernel2/2
+    ArrayTestFixture::SetUp() for size: 5
+[0;32m[       OK ] [mScanRandomTests/CudaScanTest.TestKernel2/2 (134 ms)
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest (134 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m1 test from 1 test suite ran. (134 ms total)
+[0;32m[  PASSED  ] [m1 test.
+<end of output>
+Test time =   0.21 sec
+----------------------------------------------------------
+Test Passed.
+"ScanRandomTests/CudaScanTest.TestKernel2/5" end time: Jun 08 00:01 EEST
+"ScanRandomTests/CudaScanTest.TestKernel2/5" time elapsed: 00:00:00
+----------------------------------------------------------
+
+31/79 Testing: ScanRandomTests/CudaScanTest.TestKernel2/10
+31/79 Test: ScanRandomTests/CudaScanTest.TestKernel2/10
+Command: "/home/sviatoslav/course_project/build-release/tests/lib_tests" "--gtest_filter=ScanRandomTests/CudaScanTest.TestKernel2/3" "--gtest_also_run_disabled_tests"
+Directory: /home/sviatoslav/course_project/build-release/tests
+"ScanRandomTests/CudaScanTest.TestKernel2/10" start time: Jun 08 00:01 EEST
+Output:
+----------------------------------------------------------
+Running main() from /home/sviatoslav/course_project/build-release/_deps/googletest-src/googletest/src/gtest_main.cc
+[0;33mNote: Google Test filter = ScanRandomTests/CudaScanTest.TestKernel2/3
+[m[0;32m[==========] [mRunning 1 test from 1 test suite.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest
+[0;32m[ RUN      ] [mScanRandomTests/CudaScanTest.TestKernel2/3
+    ArrayTestFixture::SetUp() for size: 10
+[0;32m[       OK ] [mScanRandomTests/CudaScanTest.TestKernel2/3 (133 ms)
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest (133 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m1 test from 1 test suite ran. (133 ms total)
+[0;32m[  PASSED  ] [m1 test.
+<end of output>
+Test time =   0.21 sec
+----------------------------------------------------------
+Test Passed.
+"ScanRandomTests/CudaScanTest.TestKernel2/10" end time: Jun 08 00:01 EEST
+"ScanRandomTests/CudaScanTest.TestKernel2/10" time elapsed: 00:00:00
+----------------------------------------------------------
+
+32/79 Testing: ScanRandomTests/CudaScanTest.TestKernel2/16
+32/79 Test: ScanRandomTests/CudaScanTest.TestKernel2/16
+Command: "/home/sviatoslav/course_project/build-release/tests/lib_tests" "--gtest_filter=ScanRandomTests/CudaScanTest.TestKernel2/4" "--gtest_also_run_disabled_tests"
+Directory: /home/sviatoslav/course_project/build-release/tests
+"ScanRandomTests/CudaScanTest.TestKernel2/16" start time: Jun 08 00:01 EEST
+Output:
+----------------------------------------------------------
+Running main() from /home/sviatoslav/course_project/build-release/_deps/googletest-src/googletest/src/gtest_main.cc
+[0;33mNote: Google Test filter = ScanRandomTests/CudaScanTest.TestKernel2/4
+[m[0;32m[==========] [mRunning 1 test from 1 test suite.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest
+[0;32m[ RUN      ] [mScanRandomTests/CudaScanTest.TestKernel2/4
+    ArrayTestFixture::SetUp() for size: 16
+[0;32m[       OK ] [mScanRandomTests/CudaScanTest.TestKernel2/4 (129 ms)
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest (129 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m1 test from 1 test suite ran. (129 ms total)
+[0;32m[  PASSED  ] [m1 test.
+<end of output>
+Test time =   0.20 sec
+----------------------------------------------------------
+Test Passed.
+"ScanRandomTests/CudaScanTest.TestKernel2/16" end time: Jun 08 00:01 EEST
+"ScanRandomTests/CudaScanTest.TestKernel2/16" time elapsed: 00:00:00
+----------------------------------------------------------
+
+33/79 Testing: ScanRandomTests/CudaScanTest.TestKernel2/19
+33/79 Test: ScanRandomTests/CudaScanTest.TestKernel2/19
+Command: "/home/sviatoslav/course_project/build-release/tests/lib_tests" "--gtest_filter=ScanRandomTests/CudaScanTest.TestKernel2/5" "--gtest_also_run_disabled_tests"
+Directory: /home/sviatoslav/course_project/build-release/tests
+"ScanRandomTests/CudaScanTest.TestKernel2/19" start time: Jun 08 00:01 EEST
+Output:
+----------------------------------------------------------
+Running main() from /home/sviatoslav/course_project/build-release/_deps/googletest-src/googletest/src/gtest_main.cc
+[0;33mNote: Google Test filter = ScanRandomTests/CudaScanTest.TestKernel2/5
+[m[0;32m[==========] [mRunning 1 test from 1 test suite.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest
+[0;32m[ RUN      ] [mScanRandomTests/CudaScanTest.TestKernel2/5
+    ArrayTestFixture::SetUp() for size: 19
+[0;32m[       OK ] [mScanRandomTests/CudaScanTest.TestKernel2/5 (129 ms)
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest (129 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m1 test from 1 test suite ran. (129 ms total)
+[0;32m[  PASSED  ] [m1 test.
+<end of output>
+Test time =   0.22 sec
+----------------------------------------------------------
+Test Passed.
+"ScanRandomTests/CudaScanTest.TestKernel2/19" end time: Jun 08 00:01 EEST
+"ScanRandomTests/CudaScanTest.TestKernel2/19" time elapsed: 00:00:00
+----------------------------------------------------------
+
+34/79 Testing: ScanRandomTests/CudaScanTest.TestKernel2/27
+34/79 Test: ScanRandomTests/CudaScanTest.TestKernel2/27
+Command: "/home/sviatoslav/course_project/build-release/tests/lib_tests" "--gtest_filter=ScanRandomTests/CudaScanTest.TestKernel2/6" "--gtest_also_run_disabled_tests"
+Directory: /home/sviatoslav/course_project/build-release/tests
+"ScanRandomTests/CudaScanTest.TestKernel2/27" start time: Jun 08 00:01 EEST
+Output:
+----------------------------------------------------------
+Running main() from /home/sviatoslav/course_project/build-release/_deps/googletest-src/googletest/src/gtest_main.cc
+[0;33mNote: Google Test filter = ScanRandomTests/CudaScanTest.TestKernel2/6
+[m[0;32m[==========] [mRunning 1 test from 1 test suite.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest
+[0;32m[ RUN      ] [mScanRandomTests/CudaScanTest.TestKernel2/6
+    ArrayTestFixture::SetUp() for size: 27
+[0;32m[       OK ] [mScanRandomTests/CudaScanTest.TestKernel2/6 (135 ms)
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest (135 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m1 test from 1 test suite ran. (135 ms total)
+[0;32m[  PASSED  ] [m1 test.
+<end of output>
+Test time =   0.21 sec
+----------------------------------------------------------
+Test Passed.
+"ScanRandomTests/CudaScanTest.TestKernel2/27" end time: Jun 08 00:01 EEST
+"ScanRandomTests/CudaScanTest.TestKernel2/27" time elapsed: 00:00:00
+----------------------------------------------------------
+
+35/79 Testing: ScanRandomTests/CudaScanTest.TestKernel2/46
+35/79 Test: ScanRandomTests/CudaScanTest.TestKernel2/46
+Command: "/home/sviatoslav/course_project/build-release/tests/lib_tests" "--gtest_filter=ScanRandomTests/CudaScanTest.TestKernel2/7" "--gtest_also_run_disabled_tests"
+Directory: /home/sviatoslav/course_project/build-release/tests
+"ScanRandomTests/CudaScanTest.TestKernel2/46" start time: Jun 08 00:01 EEST
+Output:
+----------------------------------------------------------
+Running main() from /home/sviatoslav/course_project/build-release/_deps/googletest-src/googletest/src/gtest_main.cc
+[0;33mNote: Google Test filter = ScanRandomTests/CudaScanTest.TestKernel2/7
+[m[0;32m[==========] [mRunning 1 test from 1 test suite.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest
+[0;32m[ RUN      ] [mScanRandomTests/CudaScanTest.TestKernel2/7
+    ArrayTestFixture::SetUp() for size: 46
+[0;32m[       OK ] [mScanRandomTests/CudaScanTest.TestKernel2/7 (132 ms)
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest (132 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m1 test from 1 test suite ran. (132 ms total)
+[0;32m[  PASSED  ] [m1 test.
+<end of output>
+Test time =   0.21 sec
+----------------------------------------------------------
+Test Passed.
+"ScanRandomTests/CudaScanTest.TestKernel2/46" end time: Jun 08 00:01 EEST
+"ScanRandomTests/CudaScanTest.TestKernel2/46" time elapsed: 00:00:00
+----------------------------------------------------------
+
+36/79 Testing: ScanRandomTests/CudaScanTest.TestKernel2/74
+36/79 Test: ScanRandomTests/CudaScanTest.TestKernel2/74
+Command: "/home/sviatoslav/course_project/build-release/tests/lib_tests" "--gtest_filter=ScanRandomTests/CudaScanTest.TestKernel2/8" "--gtest_also_run_disabled_tests"
+Directory: /home/sviatoslav/course_project/build-release/tests
+"ScanRandomTests/CudaScanTest.TestKernel2/74" start time: Jun 08 00:01 EEST
+Output:
+----------------------------------------------------------
+Running main() from /home/sviatoslav/course_project/build-release/_deps/googletest-src/googletest/src/gtest_main.cc
+[0;33mNote: Google Test filter = ScanRandomTests/CudaScanTest.TestKernel2/8
+[m[0;32m[==========] [mRunning 1 test from 1 test suite.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest
+[0;32m[ RUN      ] [mScanRandomTests/CudaScanTest.TestKernel2/8
+    ArrayTestFixture::SetUp() for size: 74
+[0;32m[       OK ] [mScanRandomTests/CudaScanTest.TestKernel2/8 (132 ms)
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest (132 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m1 test from 1 test suite ran. (132 ms total)
+[0;32m[  PASSED  ] [m1 test.
+<end of output>
+Test time =   0.21 sec
+----------------------------------------------------------
+Test Passed.
+"ScanRandomTests/CudaScanTest.TestKernel2/74" end time: Jun 08 00:01 EEST
+"ScanRandomTests/CudaScanTest.TestKernel2/74" time elapsed: 00:00:00
+----------------------------------------------------------
+
+37/79 Testing: ScanRandomTests/CudaScanTest.TestKernel2/123
+37/79 Test: ScanRandomTests/CudaScanTest.TestKernel2/123
+Command: "/home/sviatoslav/course_project/build-release/tests/lib_tests" "--gtest_filter=ScanRandomTests/CudaScanTest.TestKernel2/9" "--gtest_also_run_disabled_tests"
+Directory: /home/sviatoslav/course_project/build-release/tests
+"ScanRandomTests/CudaScanTest.TestKernel2/123" start time: Jun 08 00:01 EEST
+Output:
+----------------------------------------------------------
+Running main() from /home/sviatoslav/course_project/build-release/_deps/googletest-src/googletest/src/gtest_main.cc
+[0;33mNote: Google Test filter = ScanRandomTests/CudaScanTest.TestKernel2/9
+[m[0;32m[==========] [mRunning 1 test from 1 test suite.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest
+[0;32m[ RUN      ] [mScanRandomTests/CudaScanTest.TestKernel2/9
+    ArrayTestFixture::SetUp() for size: 123
+[0;32m[       OK ] [mScanRandomTests/CudaScanTest.TestKernel2/9 (135 ms)
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest (135 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m1 test from 1 test suite ran. (135 ms total)
+[0;32m[  PASSED  ] [m1 test.
+<end of output>
+Test time =   0.21 sec
+----------------------------------------------------------
+Test Passed.
+"ScanRandomTests/CudaScanTest.TestKernel2/123" end time: Jun 08 00:01 EEST
+"ScanRandomTests/CudaScanTest.TestKernel2/123" time elapsed: 00:00:00
+----------------------------------------------------------
+
+38/79 Testing: ScanRandomTests/CudaScanTest.TestKernel2/189
+38/79 Test: ScanRandomTests/CudaScanTest.TestKernel2/189
+Command: "/home/sviatoslav/course_project/build-release/tests/lib_tests" "--gtest_filter=ScanRandomTests/CudaScanTest.TestKernel2/10" "--gtest_also_run_disabled_tests"
+Directory: /home/sviatoslav/course_project/build-release/tests
+"ScanRandomTests/CudaScanTest.TestKernel2/189" start time: Jun 08 00:01 EEST
+Output:
+----------------------------------------------------------
+Running main() from /home/sviatoslav/course_project/build-release/_deps/googletest-src/googletest/src/gtest_main.cc
+[0;33mNote: Google Test filter = ScanRandomTests/CudaScanTest.TestKernel2/10
+[m[0;32m[==========] [mRunning 1 test from 1 test suite.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest
+[0;32m[ RUN      ] [mScanRandomTests/CudaScanTest.TestKernel2/10
+    ArrayTestFixture::SetUp() for size: 189
+[0;32m[       OK ] [mScanRandomTests/CudaScanTest.TestKernel2/10 (128 ms)
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest (128 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m1 test from 1 test suite ran. (128 ms total)
+[0;32m[  PASSED  ] [m1 test.
+<end of output>
+Test time =   0.22 sec
+----------------------------------------------------------
+Test Passed.
+"ScanRandomTests/CudaScanTest.TestKernel2/189" end time: Jun 08 00:01 EEST
+"ScanRandomTests/CudaScanTest.TestKernel2/189" time elapsed: 00:00:00
+----------------------------------------------------------
+
+39/79 Testing: ScanRandomTests/CudaScanTest.TestKernel2/346
+39/79 Test: ScanRandomTests/CudaScanTest.TestKernel2/346
+Command: "/home/sviatoslav/course_project/build-release/tests/lib_tests" "--gtest_filter=ScanRandomTests/CudaScanTest.TestKernel2/11" "--gtest_also_run_disabled_tests"
+Directory: /home/sviatoslav/course_project/build-release/tests
+"ScanRandomTests/CudaScanTest.TestKernel2/346" start time: Jun 08 00:01 EEST
+Output:
+----------------------------------------------------------
+Running main() from /home/sviatoslav/course_project/build-release/_deps/googletest-src/googletest/src/gtest_main.cc
+[0;33mNote: Google Test filter = ScanRandomTests/CudaScanTest.TestKernel2/11
+[m[0;32m[==========] [mRunning 1 test from 1 test suite.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest
+[0;32m[ RUN      ] [mScanRandomTests/CudaScanTest.TestKernel2/11
+    ArrayTestFixture::SetUp() for size: 346
+[0;32m[       OK ] [mScanRandomTests/CudaScanTest.TestKernel2/11 (130 ms)
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest (130 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m1 test from 1 test suite ran. (130 ms total)
+[0;32m[  PASSED  ] [m1 test.
+<end of output>
+Test time =   0.20 sec
+----------------------------------------------------------
+Test Passed.
+"ScanRandomTests/CudaScanTest.TestKernel2/346" end time: Jun 08 00:01 EEST
+"ScanRandomTests/CudaScanTest.TestKernel2/346" time elapsed: 00:00:00
+----------------------------------------------------------
+
+40/79 Testing: ScanRandomTests/CudaScanTest.TestKernel2/786
+40/79 Test: ScanRandomTests/CudaScanTest.TestKernel2/786
+Command: "/home/sviatoslav/course_project/build-release/tests/lib_tests" "--gtest_filter=ScanRandomTests/CudaScanTest.TestKernel2/12" "--gtest_also_run_disabled_tests"
+Directory: /home/sviatoslav/course_project/build-release/tests
+"ScanRandomTests/CudaScanTest.TestKernel2/786" start time: Jun 08 00:01 EEST
+Output:
+----------------------------------------------------------
+Running main() from /home/sviatoslav/course_project/build-release/_deps/googletest-src/googletest/src/gtest_main.cc
+[0;33mNote: Google Test filter = ScanRandomTests/CudaScanTest.TestKernel2/12
+[m[0;32m[==========] [mRunning 1 test from 1 test suite.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest
+[0;32m[ RUN      ] [mScanRandomTests/CudaScanTest.TestKernel2/12
+    ArrayTestFixture::SetUp() for size: 786
+[0;32m[       OK ] [mScanRandomTests/CudaScanTest.TestKernel2/12 (134 ms)
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest (134 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m1 test from 1 test suite ran. (134 ms total)
+[0;32m[  PASSED  ] [m1 test.
+<end of output>
+Test time =   0.21 sec
+----------------------------------------------------------
+Test Passed.
+"ScanRandomTests/CudaScanTest.TestKernel2/786" end time: Jun 08 00:01 EEST
+"ScanRandomTests/CudaScanTest.TestKernel2/786" time elapsed: 00:00:00
+----------------------------------------------------------
+
+41/79 Testing: ScanRandomTests/CudaScanTest.TestKernel2/1024
+41/79 Test: ScanRandomTests/CudaScanTest.TestKernel2/1024
+Command: "/home/sviatoslav/course_project/build-release/tests/lib_tests" "--gtest_filter=ScanRandomTests/CudaScanTest.TestKernel2/13" "--gtest_also_run_disabled_tests"
+Directory: /home/sviatoslav/course_project/build-release/tests
+"ScanRandomTests/CudaScanTest.TestKernel2/1024" start time: Jun 08 00:01 EEST
+Output:
+----------------------------------------------------------
+Running main() from /home/sviatoslav/course_project/build-release/_deps/googletest-src/googletest/src/gtest_main.cc
+[0;33mNote: Google Test filter = ScanRandomTests/CudaScanTest.TestKernel2/13
+[m[0;32m[==========] [mRunning 1 test from 1 test suite.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest
+[0;32m[ RUN      ] [mScanRandomTests/CudaScanTest.TestKernel2/13
+    ArrayTestFixture::SetUp() for size: 1024
+[0;32m[       OK ] [mScanRandomTests/CudaScanTest.TestKernel2/13 (137 ms)
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest (137 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m1 test from 1 test suite ran. (137 ms total)
+[0;32m[  PASSED  ] [m1 test.
+<end of output>
+Test time =   0.21 sec
+----------------------------------------------------------
+Test Passed.
+"ScanRandomTests/CudaScanTest.TestKernel2/1024" end time: Jun 08 00:01 EEST
+"ScanRandomTests/CudaScanTest.TestKernel2/1024" time elapsed: 00:00:00
+----------------------------------------------------------
+
+42/79 Testing: ScanRandomTests/CudaScanTest.TestKernel2/2048
+42/79 Test: ScanRandomTests/CudaScanTest.TestKernel2/2048
+Command: "/home/sviatoslav/course_project/build-release/tests/lib_tests" "--gtest_filter=ScanRandomTests/CudaScanTest.TestKernel2/14" "--gtest_also_run_disabled_tests"
+Directory: /home/sviatoslav/course_project/build-release/tests
+"ScanRandomTests/CudaScanTest.TestKernel2/2048" start time: Jun 08 00:01 EEST
+Output:
+----------------------------------------------------------
+Running main() from /home/sviatoslav/course_project/build-release/_deps/googletest-src/googletest/src/gtest_main.cc
+[0;33mNote: Google Test filter = ScanRandomTests/CudaScanTest.TestKernel2/14
+[m[0;32m[==========] [mRunning 1 test from 1 test suite.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest
+[0;32m[ RUN      ] [mScanRandomTests/CudaScanTest.TestKernel2/14
+    ArrayTestFixture::SetUp() for size: 2048
+[0;32m[       OK ] [mScanRandomTests/CudaScanTest.TestKernel2/14 (133 ms)
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest (133 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m1 test from 1 test suite ran. (133 ms total)
+[0;32m[  PASSED  ] [m1 test.
+<end of output>
+Test time =   0.21 sec
+----------------------------------------------------------
+Test Passed.
+"ScanRandomTests/CudaScanTest.TestKernel2/2048" end time: Jun 08 00:01 EEST
+"ScanRandomTests/CudaScanTest.TestKernel2/2048" time elapsed: 00:00:00
+----------------------------------------------------------
+
+43/79 Testing: ScanRandomTests/CudaScanTest.TestKernel2/4657
+43/79 Test: ScanRandomTests/CudaScanTest.TestKernel2/4657
+Command: "/home/sviatoslav/course_project/build-release/tests/lib_tests" "--gtest_filter=ScanRandomTests/CudaScanTest.TestKernel2/15" "--gtest_also_run_disabled_tests"
+Directory: /home/sviatoslav/course_project/build-release/tests
+"ScanRandomTests/CudaScanTest.TestKernel2/4657" start time: Jun 08 00:01 EEST
+Output:
+----------------------------------------------------------
+Running main() from /home/sviatoslav/course_project/build-release/_deps/googletest-src/googletest/src/gtest_main.cc
+[0;33mNote: Google Test filter = ScanRandomTests/CudaScanTest.TestKernel2/15
+[m[0;32m[==========] [mRunning 1 test from 1 test suite.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest
+[0;32m[ RUN      ] [mScanRandomTests/CudaScanTest.TestKernel2/15
+    ArrayTestFixture::SetUp() for size: 4657
+[0;32m[       OK ] [mScanRandomTests/CudaScanTest.TestKernel2/15 (147 ms)
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest (147 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m1 test from 1 test suite ran. (147 ms total)
+[0;32m[  PASSED  ] [m1 test.
+<end of output>
+Test time =   0.24 sec
+----------------------------------------------------------
+Test Passed.
+"ScanRandomTests/CudaScanTest.TestKernel2/4657" end time: Jun 08 00:01 EEST
+"ScanRandomTests/CudaScanTest.TestKernel2/4657" time elapsed: 00:00:00
+----------------------------------------------------------
+
+44/79 Testing: ScanRandomTests/CudaScanTest.TestKernel2/14765
+44/79 Test: ScanRandomTests/CudaScanTest.TestKernel2/14765
+Command: "/home/sviatoslav/course_project/build-release/tests/lib_tests" "--gtest_filter=ScanRandomTests/CudaScanTest.TestKernel2/16" "--gtest_also_run_disabled_tests"
+Directory: /home/sviatoslav/course_project/build-release/tests
+"ScanRandomTests/CudaScanTest.TestKernel2/14765" start time: Jun 08 00:01 EEST
+Output:
+----------------------------------------------------------
+Running main() from /home/sviatoslav/course_project/build-release/_deps/googletest-src/googletest/src/gtest_main.cc
+[0;33mNote: Google Test filter = ScanRandomTests/CudaScanTest.TestKernel2/16
+[m[0;32m[==========] [mRunning 1 test from 1 test suite.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest
+[0;32m[ RUN      ] [mScanRandomTests/CudaScanTest.TestKernel2/16
+    ArrayTestFixture::SetUp() for size: 14765
+[0;32m[       OK ] [mScanRandomTests/CudaScanTest.TestKernel2/16 (151 ms)
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest (151 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m1 test from 1 test suite ran. (151 ms total)
+[0;32m[  PASSED  ] [m1 test.
+<end of output>
+Test time =   0.23 sec
+----------------------------------------------------------
+Test Passed.
+"ScanRandomTests/CudaScanTest.TestKernel2/14765" end time: Jun 08 00:01 EEST
+"ScanRandomTests/CudaScanTest.TestKernel2/14765" time elapsed: 00:00:00
+----------------------------------------------------------
+
+45/79 Testing: ScanRandomTests/CudaScanTest.TestKernel2/146873
+45/79 Test: ScanRandomTests/CudaScanTest.TestKernel2/146873
+Command: "/home/sviatoslav/course_project/build-release/tests/lib_tests" "--gtest_filter=ScanRandomTests/CudaScanTest.TestKernel2/17" "--gtest_also_run_disabled_tests"
+Directory: /home/sviatoslav/course_project/build-release/tests
+"ScanRandomTests/CudaScanTest.TestKernel2/146873" start time: Jun 08 00:01 EEST
+Output:
+----------------------------------------------------------
+Running main() from /home/sviatoslav/course_project/build-release/_deps/googletest-src/googletest/src/gtest_main.cc
+[0;33mNote: Google Test filter = ScanRandomTests/CudaScanTest.TestKernel2/17
+[m[0;32m[==========] [mRunning 1 test from 1 test suite.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest
+[0;32m[ RUN      ] [mScanRandomTests/CudaScanTest.TestKernel2/17
+    ArrayTestFixture::SetUp() for size: 146873
+[0;32m[       OK ] [mScanRandomTests/CudaScanTest.TestKernel2/17 (151 ms)
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest (151 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m1 test from 1 test suite ran. (151 ms total)
+[0;32m[  PASSED  ] [m1 test.
+<end of output>
+Test time =   0.23 sec
+----------------------------------------------------------
+Test Passed.
+"ScanRandomTests/CudaScanTest.TestKernel2/146873" end time: Jun 08 00:01 EEST
+"ScanRandomTests/CudaScanTest.TestKernel2/146873" time elapsed: 00:00:00
+----------------------------------------------------------
+
+46/79 Testing: ScanRandomTests/CudaScanTest.TestKernel2/65536
+46/79 Test: ScanRandomTests/CudaScanTest.TestKernel2/65536
+Command: "/home/sviatoslav/course_project/build-release/tests/lib_tests" "--gtest_filter=ScanRandomTests/CudaScanTest.TestKernel2/18" "--gtest_also_run_disabled_tests"
+Directory: /home/sviatoslav/course_project/build-release/tests
+"ScanRandomTests/CudaScanTest.TestKernel2/65536" start time: Jun 08 00:01 EEST
+Output:
+----------------------------------------------------------
+Running main() from /home/sviatoslav/course_project/build-release/_deps/googletest-src/googletest/src/gtest_main.cc
+[0;33mNote: Google Test filter = ScanRandomTests/CudaScanTest.TestKernel2/18
+[m[0;32m[==========] [mRunning 1 test from 1 test suite.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest
+[0;32m[ RUN      ] [mScanRandomTests/CudaScanTest.TestKernel2/18
+    ArrayTestFixture::SetUp() for size: 65536
+[0;32m[       OK ] [mScanRandomTests/CudaScanTest.TestKernel2/18 (148 ms)
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest (148 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m1 test from 1 test suite ran. (148 ms total)
+[0;32m[  PASSED  ] [m1 test.
+<end of output>
+Test time =   0.23 sec
+----------------------------------------------------------
+Test Passed.
+"ScanRandomTests/CudaScanTest.TestKernel2/65536" end time: Jun 08 00:01 EEST
+"ScanRandomTests/CudaScanTest.TestKernel2/65536" time elapsed: 00:00:00
+----------------------------------------------------------
+
+47/79 Testing: ScanRandomTests/CudaScanTest.TestKernel2/131034
+47/79 Test: ScanRandomTests/CudaScanTest.TestKernel2/131034
+Command: "/home/sviatoslav/course_project/build-release/tests/lib_tests" "--gtest_filter=ScanRandomTests/CudaScanTest.TestKernel2/19" "--gtest_also_run_disabled_tests"
+Directory: /home/sviatoslav/course_project/build-release/tests
+"ScanRandomTests/CudaScanTest.TestKernel2/131034" start time: Jun 08 00:01 EEST
+Output:
+----------------------------------------------------------
+Running main() from /home/sviatoslav/course_project/build-release/_deps/googletest-src/googletest/src/gtest_main.cc
+[0;33mNote: Google Test filter = ScanRandomTests/CudaScanTest.TestKernel2/19
+[m[0;32m[==========] [mRunning 1 test from 1 test suite.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest
+[0;32m[ RUN      ] [mScanRandomTests/CudaScanTest.TestKernel2/19
+    ArrayTestFixture::SetUp() for size: 131034
+[0;32m[       OK ] [mScanRandomTests/CudaScanTest.TestKernel2/19 (152 ms)
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest (152 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m1 test from 1 test suite ran. (152 ms total)
+[0;32m[  PASSED  ] [m1 test.
+<end of output>
+Test time =   0.24 sec
+----------------------------------------------------------
+Test Passed.
+"ScanRandomTests/CudaScanTest.TestKernel2/131034" end time: Jun 08 00:01 EEST
+"ScanRandomTests/CudaScanTest.TestKernel2/131034" time elapsed: 00:00:00
+----------------------------------------------------------
+
+48/79 Testing: ScanRandomTests/CudaScanTest.TestKernel2/262193
+48/79 Test: ScanRandomTests/CudaScanTest.TestKernel2/262193
+Command: "/home/sviatoslav/course_project/build-release/tests/lib_tests" "--gtest_filter=ScanRandomTests/CudaScanTest.TestKernel2/20" "--gtest_also_run_disabled_tests"
+Directory: /home/sviatoslav/course_project/build-release/tests
+"ScanRandomTests/CudaScanTest.TestKernel2/262193" start time: Jun 08 00:01 EEST
+Output:
+----------------------------------------------------------
+Running main() from /home/sviatoslav/course_project/build-release/_deps/googletest-src/googletest/src/gtest_main.cc
+[0;33mNote: Google Test filter = ScanRandomTests/CudaScanTest.TestKernel2/20
+[m[0;32m[==========] [mRunning 1 test from 1 test suite.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest
+[0;32m[ RUN      ] [mScanRandomTests/CudaScanTest.TestKernel2/20
+    ArrayTestFixture::SetUp() for size: 262193
+[0;32m[       OK ] [mScanRandomTests/CudaScanTest.TestKernel2/20 (172 ms)
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest (172 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m1 test from 1 test suite ran. (172 ms total)
+[0;32m[  PASSED  ] [m1 test.
+<end of output>
+Test time =   0.25 sec
+----------------------------------------------------------
+Test Passed.
+"ScanRandomTests/CudaScanTest.TestKernel2/262193" end time: Jun 08 00:01 EEST
+"ScanRandomTests/CudaScanTest.TestKernel2/262193" time elapsed: 00:00:00
+----------------------------------------------------------
+
+49/79 Testing: ScanRandomTests/CudaScanTest.TestKernel2/1048577
+49/79 Test: ScanRandomTests/CudaScanTest.TestKernel2/1048577
+Command: "/home/sviatoslav/course_project/build-release/tests/lib_tests" "--gtest_filter=ScanRandomTests/CudaScanTest.TestKernel2/21" "--gtest_also_run_disabled_tests"
+Directory: /home/sviatoslav/course_project/build-release/tests
+"ScanRandomTests/CudaScanTest.TestKernel2/1048577" start time: Jun 08 00:01 EEST
+Output:
+----------------------------------------------------------
+Running main() from /home/sviatoslav/course_project/build-release/_deps/googletest-src/googletest/src/gtest_main.cc
+[0;33mNote: Google Test filter = ScanRandomTests/CudaScanTest.TestKernel2/21
+[m[0;32m[==========] [mRunning 1 test from 1 test suite.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest
+[0;32m[ RUN      ] [mScanRandomTests/CudaScanTest.TestKernel2/21
+    ArrayTestFixture::SetUp() for size: 1048577
+[0;32m[       OK ] [mScanRandomTests/CudaScanTest.TestKernel2/21 (153 ms)
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest (153 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m1 test from 1 test suite ran. (153 ms total)
+[0;32m[  PASSED  ] [m1 test.
+<end of output>
+Test time =   0.22 sec
+----------------------------------------------------------
+Test Passed.
+"ScanRandomTests/CudaScanTest.TestKernel2/1048577" end time: Jun 08 00:01 EEST
+"ScanRandomTests/CudaScanTest.TestKernel2/1048577" time elapsed: 00:00:00
+----------------------------------------------------------
+
+50/79 Testing: ScanRandomTests/CudaScanTest.TestKernel2/2097151
+50/79 Test: ScanRandomTests/CudaScanTest.TestKernel2/2097151
+Command: "/home/sviatoslav/course_project/build-release/tests/lib_tests" "--gtest_filter=ScanRandomTests/CudaScanTest.TestKernel2/22" "--gtest_also_run_disabled_tests"
+Directory: /home/sviatoslav/course_project/build-release/tests
+"ScanRandomTests/CudaScanTest.TestKernel2/2097151" start time: Jun 08 00:01 EEST
+Output:
+----------------------------------------------------------
+Running main() from /home/sviatoslav/course_project/build-release/_deps/googletest-src/googletest/src/gtest_main.cc
+[0;33mNote: Google Test filter = ScanRandomTests/CudaScanTest.TestKernel2/22
+[m[0;32m[==========] [mRunning 1 test from 1 test suite.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest
+[0;32m[ RUN      ] [mScanRandomTests/CudaScanTest.TestKernel2/22
+    ArrayTestFixture::SetUp() for size: 2097151
+[0;32m[       OK ] [mScanRandomTests/CudaScanTest.TestKernel2/22 (159 ms)
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest (159 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m1 test from 1 test suite ran. (159 ms total)
+[0;32m[  PASSED  ] [m1 test.
+<end of output>
+Test time =   0.23 sec
+----------------------------------------------------------
+Test Passed.
+"ScanRandomTests/CudaScanTest.TestKernel2/2097151" end time: Jun 08 00:01 EEST
+"ScanRandomTests/CudaScanTest.TestKernel2/2097151" time elapsed: 00:00:00
+----------------------------------------------------------
+
+51/79 Testing: ScanRandomTests/CudaScanTest.TestKernel2/4194538
+51/79 Test: ScanRandomTests/CudaScanTest.TestKernel2/4194538
+Command: "/home/sviatoslav/course_project/build-release/tests/lib_tests" "--gtest_filter=ScanRandomTests/CudaScanTest.TestKernel2/23" "--gtest_also_run_disabled_tests"
+Directory: /home/sviatoslav/course_project/build-release/tests
+"ScanRandomTests/CudaScanTest.TestKernel2/4194538" start time: Jun 08 00:01 EEST
+Output:
+----------------------------------------------------------
+Running main() from /home/sviatoslav/course_project/build-release/_deps/googletest-src/googletest/src/gtest_main.cc
+[0;33mNote: Google Test filter = ScanRandomTests/CudaScanTest.TestKernel2/23
+[m[0;32m[==========] [mRunning 1 test from 1 test suite.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest
+[0;32m[ RUN      ] [mScanRandomTests/CudaScanTest.TestKernel2/23
+    ArrayTestFixture::SetUp() for size: 4194538
+[0;32m[       OK ] [mScanRandomTests/CudaScanTest.TestKernel2/23 (185 ms)
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest (186 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m1 test from 1 test suite ran. (186 ms total)
+[0;32m[  PASSED  ] [m1 test.
+<end of output>
+Test time =   0.26 sec
+----------------------------------------------------------
+Test Passed.
+"ScanRandomTests/CudaScanTest.TestKernel2/4194538" end time: Jun 08 00:01 EEST
+"ScanRandomTests/CudaScanTest.TestKernel2/4194538" time elapsed: 00:00:00
+----------------------------------------------------------
+
+52/79 Testing: ScanRandomTests/CudaScanTest.TestKernel2/33554510
+52/79 Test: ScanRandomTests/CudaScanTest.TestKernel2/33554510
+Command: "/home/sviatoslav/course_project/build-release/tests/lib_tests" "--gtest_filter=ScanRandomTests/CudaScanTest.TestKernel2/24" "--gtest_also_run_disabled_tests"
+Directory: /home/sviatoslav/course_project/build-release/tests
+"ScanRandomTests/CudaScanTest.TestKernel2/33554510" start time: Jun 08 00:01 EEST
+Output:
+----------------------------------------------------------
+Running main() from /home/sviatoslav/course_project/build-release/_deps/googletest-src/googletest/src/gtest_main.cc
+[0;33mNote: Google Test filter = ScanRandomTests/CudaScanTest.TestKernel2/24
+[m[0;32m[==========] [mRunning 1 test from 1 test suite.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest
+[0;32m[ RUN      ] [mScanRandomTests/CudaScanTest.TestKernel2/24
+    ArrayTestFixture::SetUp() for size: 33554510
+[0;32m[       OK ] [mScanRandomTests/CudaScanTest.TestKernel2/24 (523 ms)
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest (523 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m1 test from 1 test suite ran. (523 ms total)
+[0;32m[  PASSED  ] [m1 test.
+<end of output>
+Test time =   0.60 sec
+----------------------------------------------------------
+Test Passed.
+"ScanRandomTests/CudaScanTest.TestKernel2/33554510" end time: Jun 08 00:01 EEST
+"ScanRandomTests/CudaScanTest.TestKernel2/33554510" time elapsed: 00:00:00
+----------------------------------------------------------
+
+53/79 Testing: ScanRandomTests/CudaScanTest.TestKernel2/536735925
+53/79 Test: ScanRandomTests/CudaScanTest.TestKernel2/536735925
+Command: "/home/sviatoslav/course_project/build-release/tests/lib_tests" "--gtest_filter=ScanRandomTests/CudaScanTest.TestKernel2/25" "--gtest_also_run_disabled_tests"
+Directory: /home/sviatoslav/course_project/build-release/tests
+"ScanRandomTests/CudaScanTest.TestKernel2/536735925" start time: Jun 08 00:01 EEST
+Output:
+----------------------------------------------------------
+Running main() from /home/sviatoslav/course_project/build-release/_deps/googletest-src/googletest/src/gtest_main.cc
+[0;33mNote: Google Test filter = ScanRandomTests/CudaScanTest.TestKernel2/25
+[m[0;32m[==========] [mRunning 1 test from 1 test suite.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest
+[0;32m[ RUN      ] [mScanRandomTests/CudaScanTest.TestKernel2/25
+    ArrayTestFixture::SetUp() for size: 536735925
+[0;32m[       OK ] [mScanRandomTests/CudaScanTest.TestKernel2/25 (5850 ms)
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest (5850 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m1 test from 1 test suite ran. (5850 ms total)
+[0;32m[  PASSED  ] [m1 test.
+<end of output>
+Test time =   5.93 sec
+----------------------------------------------------------
+Test Passed.
+"ScanRandomTests/CudaScanTest.TestKernel2/536735925" end time: Jun 08 00:01 EEST
+"ScanRandomTests/CudaScanTest.TestKernel2/536735925" time elapsed: 00:00:05
+----------------------------------------------------------
+
+54/79 Testing: ScanRandomTests/CudaScanTest.TestKernel3/1
+54/79 Test: ScanRandomTests/CudaScanTest.TestKernel3/1
+Command: "/home/sviatoslav/course_project/build-release/tests/lib_tests" "--gtest_filter=ScanRandomTests/CudaScanTest.TestKernel3/0" "--gtest_also_run_disabled_tests"
+Directory: /home/sviatoslav/course_project/build-release/tests
+"ScanRandomTests/CudaScanTest.TestKernel3/1" start time: Jun 08 00:01 EEST
+Output:
+----------------------------------------------------------
+Running main() from /home/sviatoslav/course_project/build-release/_deps/googletest-src/googletest/src/gtest_main.cc
+[0;33mNote: Google Test filter = ScanRandomTests/CudaScanTest.TestKernel3/0
+[m[0;32m[==========] [mRunning 1 test from 1 test suite.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest
+[0;32m[ RUN      ] [mScanRandomTests/CudaScanTest.TestKernel3/0
+    ArrayTestFixture::SetUp() for size: 1
+[0;32m[       OK ] [mScanRandomTests/CudaScanTest.TestKernel3/0 (143 ms)
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest (143 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m1 test from 1 test suite ran. (143 ms total)
+[0;32m[  PASSED  ] [m1 test.
+<end of output>
+Test time =   0.23 sec
+----------------------------------------------------------
+Test Passed.
+"ScanRandomTests/CudaScanTest.TestKernel3/1" end time: Jun 08 00:01 EEST
+"ScanRandomTests/CudaScanTest.TestKernel3/1" time elapsed: 00:00:00
+----------------------------------------------------------
+
+55/79 Testing: ScanRandomTests/CudaScanTest.TestKernel3/2
+55/79 Test: ScanRandomTests/CudaScanTest.TestKernel3/2
+Command: "/home/sviatoslav/course_project/build-release/tests/lib_tests" "--gtest_filter=ScanRandomTests/CudaScanTest.TestKernel3/1" "--gtest_also_run_disabled_tests"
+Directory: /home/sviatoslav/course_project/build-release/tests
+"ScanRandomTests/CudaScanTest.TestKernel3/2" start time: Jun 08 00:01 EEST
+Output:
+----------------------------------------------------------
+Running main() from /home/sviatoslav/course_project/build-release/_deps/googletest-src/googletest/src/gtest_main.cc
+[0;33mNote: Google Test filter = ScanRandomTests/CudaScanTest.TestKernel3/1
+[m[0;32m[==========] [mRunning 1 test from 1 test suite.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest
+[0;32m[ RUN      ] [mScanRandomTests/CudaScanTest.TestKernel3/1
+    ArrayTestFixture::SetUp() for size: 2
+[0;32m[       OK ] [mScanRandomTests/CudaScanTest.TestKernel3/1 (136 ms)
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest (136 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m1 test from 1 test suite ran. (136 ms total)
+[0;32m[  PASSED  ] [m1 test.
+<end of output>
+Test time =   0.21 sec
+----------------------------------------------------------
+Test Passed.
+"ScanRandomTests/CudaScanTest.TestKernel3/2" end time: Jun 08 00:01 EEST
+"ScanRandomTests/CudaScanTest.TestKernel3/2" time elapsed: 00:00:00
+----------------------------------------------------------
+
+56/79 Testing: ScanRandomTests/CudaScanTest.TestKernel3/5
+56/79 Test: ScanRandomTests/CudaScanTest.TestKernel3/5
+Command: "/home/sviatoslav/course_project/build-release/tests/lib_tests" "--gtest_filter=ScanRandomTests/CudaScanTest.TestKernel3/2" "--gtest_also_run_disabled_tests"
+Directory: /home/sviatoslav/course_project/build-release/tests
+"ScanRandomTests/CudaScanTest.TestKernel3/5" start time: Jun 08 00:01 EEST
+Output:
+----------------------------------------------------------
+Running main() from /home/sviatoslav/course_project/build-release/_deps/googletest-src/googletest/src/gtest_main.cc
+[0;33mNote: Google Test filter = ScanRandomTests/CudaScanTest.TestKernel3/2
+[m[0;32m[==========] [mRunning 1 test from 1 test suite.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest
+[0;32m[ RUN      ] [mScanRandomTests/CudaScanTest.TestKernel3/2
+    ArrayTestFixture::SetUp() for size: 5
+[0;32m[       OK ] [mScanRandomTests/CudaScanTest.TestKernel3/2 (138 ms)
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest (138 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m1 test from 1 test suite ran. (138 ms total)
+[0;32m[  PASSED  ] [m1 test.
+<end of output>
+Test time =   0.22 sec
+----------------------------------------------------------
+Test Passed.
+"ScanRandomTests/CudaScanTest.TestKernel3/5" end time: Jun 08 00:01 EEST
+"ScanRandomTests/CudaScanTest.TestKernel3/5" time elapsed: 00:00:00
+----------------------------------------------------------
+
+57/79 Testing: ScanRandomTests/CudaScanTest.TestKernel3/10
+57/79 Test: ScanRandomTests/CudaScanTest.TestKernel3/10
+Command: "/home/sviatoslav/course_project/build-release/tests/lib_tests" "--gtest_filter=ScanRandomTests/CudaScanTest.TestKernel3/3" "--gtest_also_run_disabled_tests"
+Directory: /home/sviatoslav/course_project/build-release/tests
+"ScanRandomTests/CudaScanTest.TestKernel3/10" start time: Jun 08 00:01 EEST
+Output:
+----------------------------------------------------------
+Running main() from /home/sviatoslav/course_project/build-release/_deps/googletest-src/googletest/src/gtest_main.cc
+[0;33mNote: Google Test filter = ScanRandomTests/CudaScanTest.TestKernel3/3
+[m[0;32m[==========] [mRunning 1 test from 1 test suite.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest
+[0;32m[ RUN      ] [mScanRandomTests/CudaScanTest.TestKernel3/3
+    ArrayTestFixture::SetUp() for size: 10
+[0;32m[       OK ] [mScanRandomTests/CudaScanTest.TestKernel3/3 (133 ms)
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest (133 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m1 test from 1 test suite ran. (133 ms total)
+[0;32m[  PASSED  ] [m1 test.
+<end of output>
+Test time =   0.21 sec
+----------------------------------------------------------
+Test Passed.
+"ScanRandomTests/CudaScanTest.TestKernel3/10" end time: Jun 08 00:01 EEST
+"ScanRandomTests/CudaScanTest.TestKernel3/10" time elapsed: 00:00:00
+----------------------------------------------------------
+
+58/79 Testing: ScanRandomTests/CudaScanTest.TestKernel3/16
+58/79 Test: ScanRandomTests/CudaScanTest.TestKernel3/16
+Command: "/home/sviatoslav/course_project/build-release/tests/lib_tests" "--gtest_filter=ScanRandomTests/CudaScanTest.TestKernel3/4" "--gtest_also_run_disabled_tests"
+Directory: /home/sviatoslav/course_project/build-release/tests
+"ScanRandomTests/CudaScanTest.TestKernel3/16" start time: Jun 08 00:01 EEST
+Output:
+----------------------------------------------------------
+Running main() from /home/sviatoslav/course_project/build-release/_deps/googletest-src/googletest/src/gtest_main.cc
+[0;33mNote: Google Test filter = ScanRandomTests/CudaScanTest.TestKernel3/4
+[m[0;32m[==========] [mRunning 1 test from 1 test suite.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest
+[0;32m[ RUN      ] [mScanRandomTests/CudaScanTest.TestKernel3/4
+    ArrayTestFixture::SetUp() for size: 16
+[0;32m[       OK ] [mScanRandomTests/CudaScanTest.TestKernel3/4 (161 ms)
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest (161 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m1 test from 1 test suite ran. (161 ms total)
+[0;32m[  PASSED  ] [m1 test.
+<end of output>
+Test time =   0.25 sec
+----------------------------------------------------------
+Test Passed.
+"ScanRandomTests/CudaScanTest.TestKernel3/16" end time: Jun 08 00:01 EEST
+"ScanRandomTests/CudaScanTest.TestKernel3/16" time elapsed: 00:00:00
+----------------------------------------------------------
+
+59/79 Testing: ScanRandomTests/CudaScanTest.TestKernel3/19
+59/79 Test: ScanRandomTests/CudaScanTest.TestKernel3/19
+Command: "/home/sviatoslav/course_project/build-release/tests/lib_tests" "--gtest_filter=ScanRandomTests/CudaScanTest.TestKernel3/5" "--gtest_also_run_disabled_tests"
+Directory: /home/sviatoslav/course_project/build-release/tests
+"ScanRandomTests/CudaScanTest.TestKernel3/19" start time: Jun 08 00:01 EEST
+Output:
+----------------------------------------------------------
+Running main() from /home/sviatoslav/course_project/build-release/_deps/googletest-src/googletest/src/gtest_main.cc
+[0;33mNote: Google Test filter = ScanRandomTests/CudaScanTest.TestKernel3/5
+[m[0;32m[==========] [mRunning 1 test from 1 test suite.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest
+[0;32m[ RUN      ] [mScanRandomTests/CudaScanTest.TestKernel3/5
+    ArrayTestFixture::SetUp() for size: 19
+[0;32m[       OK ] [mScanRandomTests/CudaScanTest.TestKernel3/5 (139 ms)
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest (139 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m1 test from 1 test suite ran. (139 ms total)
+[0;32m[  PASSED  ] [m1 test.
+<end of output>
+Test time =   0.21 sec
+----------------------------------------------------------
+Test Passed.
+"ScanRandomTests/CudaScanTest.TestKernel3/19" end time: Jun 08 00:01 EEST
+"ScanRandomTests/CudaScanTest.TestKernel3/19" time elapsed: 00:00:00
+----------------------------------------------------------
+
+60/79 Testing: ScanRandomTests/CudaScanTest.TestKernel3/27
+60/79 Test: ScanRandomTests/CudaScanTest.TestKernel3/27
+Command: "/home/sviatoslav/course_project/build-release/tests/lib_tests" "--gtest_filter=ScanRandomTests/CudaScanTest.TestKernel3/6" "--gtest_also_run_disabled_tests"
+Directory: /home/sviatoslav/course_project/build-release/tests
+"ScanRandomTests/CudaScanTest.TestKernel3/27" start time: Jun 08 00:01 EEST
+Output:
+----------------------------------------------------------
+Running main() from /home/sviatoslav/course_project/build-release/_deps/googletest-src/googletest/src/gtest_main.cc
+[0;33mNote: Google Test filter = ScanRandomTests/CudaScanTest.TestKernel3/6
+[m[0;32m[==========] [mRunning 1 test from 1 test suite.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest
+[0;32m[ RUN      ] [mScanRandomTests/CudaScanTest.TestKernel3/6
+    ArrayTestFixture::SetUp() for size: 27
+[0;32m[       OK ] [mScanRandomTests/CudaScanTest.TestKernel3/6 (127 ms)
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest (127 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m1 test from 1 test suite ran. (127 ms total)
+[0;32m[  PASSED  ] [m1 test.
+<end of output>
+Test time =   0.20 sec
+----------------------------------------------------------
+Test Passed.
+"ScanRandomTests/CudaScanTest.TestKernel3/27" end time: Jun 08 00:01 EEST
+"ScanRandomTests/CudaScanTest.TestKernel3/27" time elapsed: 00:00:00
+----------------------------------------------------------
+
+61/79 Testing: ScanRandomTests/CudaScanTest.TestKernel3/46
+61/79 Test: ScanRandomTests/CudaScanTest.TestKernel3/46
+Command: "/home/sviatoslav/course_project/build-release/tests/lib_tests" "--gtest_filter=ScanRandomTests/CudaScanTest.TestKernel3/7" "--gtest_also_run_disabled_tests"
+Directory: /home/sviatoslav/course_project/build-release/tests
+"ScanRandomTests/CudaScanTest.TestKernel3/46" start time: Jun 08 00:01 EEST
+Output:
+----------------------------------------------------------
+Running main() from /home/sviatoslav/course_project/build-release/_deps/googletest-src/googletest/src/gtest_main.cc
+[0;33mNote: Google Test filter = ScanRandomTests/CudaScanTest.TestKernel3/7
+[m[0;32m[==========] [mRunning 1 test from 1 test suite.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest
+[0;32m[ RUN      ] [mScanRandomTests/CudaScanTest.TestKernel3/7
+    ArrayTestFixture::SetUp() for size: 46
+[0;32m[       OK ] [mScanRandomTests/CudaScanTest.TestKernel3/7 (133 ms)
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest (133 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m1 test from 1 test suite ran. (133 ms total)
+[0;32m[  PASSED  ] [m1 test.
+<end of output>
+Test time =   0.21 sec
+----------------------------------------------------------
+Test Passed.
+"ScanRandomTests/CudaScanTest.TestKernel3/46" end time: Jun 08 00:01 EEST
+"ScanRandomTests/CudaScanTest.TestKernel3/46" time elapsed: 00:00:00
+----------------------------------------------------------
+
+62/79 Testing: ScanRandomTests/CudaScanTest.TestKernel3/74
+62/79 Test: ScanRandomTests/CudaScanTest.TestKernel3/74
+Command: "/home/sviatoslav/course_project/build-release/tests/lib_tests" "--gtest_filter=ScanRandomTests/CudaScanTest.TestKernel3/8" "--gtest_also_run_disabled_tests"
+Directory: /home/sviatoslav/course_project/build-release/tests
+"ScanRandomTests/CudaScanTest.TestKernel3/74" start time: Jun 08 00:01 EEST
+Output:
+----------------------------------------------------------
+Running main() from /home/sviatoslav/course_project/build-release/_deps/googletest-src/googletest/src/gtest_main.cc
+[0;33mNote: Google Test filter = ScanRandomTests/CudaScanTest.TestKernel3/8
+[m[0;32m[==========] [mRunning 1 test from 1 test suite.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest
+[0;32m[ RUN      ] [mScanRandomTests/CudaScanTest.TestKernel3/8
+    ArrayTestFixture::SetUp() for size: 74
+[0;32m[       OK ] [mScanRandomTests/CudaScanTest.TestKernel3/8 (128 ms)
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest (128 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m1 test from 1 test suite ran. (128 ms total)
+[0;32m[  PASSED  ] [m1 test.
+<end of output>
+Test time =   0.20 sec
+----------------------------------------------------------
+Test Passed.
+"ScanRandomTests/CudaScanTest.TestKernel3/74" end time: Jun 08 00:01 EEST
+"ScanRandomTests/CudaScanTest.TestKernel3/74" time elapsed: 00:00:00
+----------------------------------------------------------
+
+63/79 Testing: ScanRandomTests/CudaScanTest.TestKernel3/123
+63/79 Test: ScanRandomTests/CudaScanTest.TestKernel3/123
+Command: "/home/sviatoslav/course_project/build-release/tests/lib_tests" "--gtest_filter=ScanRandomTests/CudaScanTest.TestKernel3/9" "--gtest_also_run_disabled_tests"
+Directory: /home/sviatoslav/course_project/build-release/tests
+"ScanRandomTests/CudaScanTest.TestKernel3/123" start time: Jun 08 00:01 EEST
+Output:
+----------------------------------------------------------
+Running main() from /home/sviatoslav/course_project/build-release/_deps/googletest-src/googletest/src/gtest_main.cc
+[0;33mNote: Google Test filter = ScanRandomTests/CudaScanTest.TestKernel3/9
+[m[0;32m[==========] [mRunning 1 test from 1 test suite.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest
+[0;32m[ RUN      ] [mScanRandomTests/CudaScanTest.TestKernel3/9
+    ArrayTestFixture::SetUp() for size: 123
+[0;32m[       OK ] [mScanRandomTests/CudaScanTest.TestKernel3/9 (133 ms)
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest (133 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m1 test from 1 test suite ran. (133 ms total)
+[0;32m[  PASSED  ] [m1 test.
+<end of output>
+Test time =   0.21 sec
+----------------------------------------------------------
+Test Passed.
+"ScanRandomTests/CudaScanTest.TestKernel3/123" end time: Jun 08 00:01 EEST
+"ScanRandomTests/CudaScanTest.TestKernel3/123" time elapsed: 00:00:00
+----------------------------------------------------------
+
+64/79 Testing: ScanRandomTests/CudaScanTest.TestKernel3/189
+64/79 Test: ScanRandomTests/CudaScanTest.TestKernel3/189
+Command: "/home/sviatoslav/course_project/build-release/tests/lib_tests" "--gtest_filter=ScanRandomTests/CudaScanTest.TestKernel3/10" "--gtest_also_run_disabled_tests"
+Directory: /home/sviatoslav/course_project/build-release/tests
+"ScanRandomTests/CudaScanTest.TestKernel3/189" start time: Jun 08 00:01 EEST
+Output:
+----------------------------------------------------------
+Running main() from /home/sviatoslav/course_project/build-release/_deps/googletest-src/googletest/src/gtest_main.cc
+[0;33mNote: Google Test filter = ScanRandomTests/CudaScanTest.TestKernel3/10
+[m[0;32m[==========] [mRunning 1 test from 1 test suite.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest
+[0;32m[ RUN      ] [mScanRandomTests/CudaScanTest.TestKernel3/10
+    ArrayTestFixture::SetUp() for size: 189
+[0;32m[       OK ] [mScanRandomTests/CudaScanTest.TestKernel3/10 (130 ms)
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest (130 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m1 test from 1 test suite ran. (130 ms total)
+[0;32m[  PASSED  ] [m1 test.
+<end of output>
+Test time =   0.20 sec
+----------------------------------------------------------
+Test Passed.
+"ScanRandomTests/CudaScanTest.TestKernel3/189" end time: Jun 08 00:01 EEST
+"ScanRandomTests/CudaScanTest.TestKernel3/189" time elapsed: 00:00:00
+----------------------------------------------------------
+
+65/79 Testing: ScanRandomTests/CudaScanTest.TestKernel3/346
+65/79 Test: ScanRandomTests/CudaScanTest.TestKernel3/346
+Command: "/home/sviatoslav/course_project/build-release/tests/lib_tests" "--gtest_filter=ScanRandomTests/CudaScanTest.TestKernel3/11" "--gtest_also_run_disabled_tests"
+Directory: /home/sviatoslav/course_project/build-release/tests
+"ScanRandomTests/CudaScanTest.TestKernel3/346" start time: Jun 08 00:01 EEST
+Output:
+----------------------------------------------------------
+Running main() from /home/sviatoslav/course_project/build-release/_deps/googletest-src/googletest/src/gtest_main.cc
+[0;33mNote: Google Test filter = ScanRandomTests/CudaScanTest.TestKernel3/11
+[m[0;32m[==========] [mRunning 1 test from 1 test suite.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest
+[0;32m[ RUN      ] [mScanRandomTests/CudaScanTest.TestKernel3/11
+    ArrayTestFixture::SetUp() for size: 346
+[0;32m[       OK ] [mScanRandomTests/CudaScanTest.TestKernel3/11 (125 ms)
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest (125 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m1 test from 1 test suite ran. (125 ms total)
+[0;32m[  PASSED  ] [m1 test.
+<end of output>
+Test time =   0.20 sec
+----------------------------------------------------------
+Test Passed.
+"ScanRandomTests/CudaScanTest.TestKernel3/346" end time: Jun 08 00:01 EEST
+"ScanRandomTests/CudaScanTest.TestKernel3/346" time elapsed: 00:00:00
+----------------------------------------------------------
+
+66/79 Testing: ScanRandomTests/CudaScanTest.TestKernel3/786
+66/79 Test: ScanRandomTests/CudaScanTest.TestKernel3/786
+Command: "/home/sviatoslav/course_project/build-release/tests/lib_tests" "--gtest_filter=ScanRandomTests/CudaScanTest.TestKernel3/12" "--gtest_also_run_disabled_tests"
+Directory: /home/sviatoslav/course_project/build-release/tests
+"ScanRandomTests/CudaScanTest.TestKernel3/786" start time: Jun 08 00:01 EEST
+Output:
+----------------------------------------------------------
+Running main() from /home/sviatoslav/course_project/build-release/_deps/googletest-src/googletest/src/gtest_main.cc
+[0;33mNote: Google Test filter = ScanRandomTests/CudaScanTest.TestKernel3/12
+[m[0;32m[==========] [mRunning 1 test from 1 test suite.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest
+[0;32m[ RUN      ] [mScanRandomTests/CudaScanTest.TestKernel3/12
+    ArrayTestFixture::SetUp() for size: 786
+[0;32m[       OK ] [mScanRandomTests/CudaScanTest.TestKernel3/12 (133 ms)
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest (133 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m1 test from 1 test suite ran. (133 ms total)
+[0;32m[  PASSED  ] [m1 test.
+<end of output>
+Test time =   0.21 sec
+----------------------------------------------------------
+Test Passed.
+"ScanRandomTests/CudaScanTest.TestKernel3/786" end time: Jun 08 00:01 EEST
+"ScanRandomTests/CudaScanTest.TestKernel3/786" time elapsed: 00:00:00
+----------------------------------------------------------
+
+67/79 Testing: ScanRandomTests/CudaScanTest.TestKernel3/1024
+67/79 Test: ScanRandomTests/CudaScanTest.TestKernel3/1024
+Command: "/home/sviatoslav/course_project/build-release/tests/lib_tests" "--gtest_filter=ScanRandomTests/CudaScanTest.TestKernel3/13" "--gtest_also_run_disabled_tests"
+Directory: /home/sviatoslav/course_project/build-release/tests
+"ScanRandomTests/CudaScanTest.TestKernel3/1024" start time: Jun 08 00:01 EEST
+Output:
+----------------------------------------------------------
+Running main() from /home/sviatoslav/course_project/build-release/_deps/googletest-src/googletest/src/gtest_main.cc
+[0;33mNote: Google Test filter = ScanRandomTests/CudaScanTest.TestKernel3/13
+[m[0;32m[==========] [mRunning 1 test from 1 test suite.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest
+[0;32m[ RUN      ] [mScanRandomTests/CudaScanTest.TestKernel3/13
+    ArrayTestFixture::SetUp() for size: 1024
+[0;32m[       OK ] [mScanRandomTests/CudaScanTest.TestKernel3/13 (127 ms)
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest (127 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m1 test from 1 test suite ran. (127 ms total)
+[0;32m[  PASSED  ] [m1 test.
+<end of output>
+Test time =   0.20 sec
+----------------------------------------------------------
+Test Passed.
+"ScanRandomTests/CudaScanTest.TestKernel3/1024" end time: Jun 08 00:01 EEST
+"ScanRandomTests/CudaScanTest.TestKernel3/1024" time elapsed: 00:00:00
+----------------------------------------------------------
+
+68/79 Testing: ScanRandomTests/CudaScanTest.TestKernel3/2048
+68/79 Test: ScanRandomTests/CudaScanTest.TestKernel3/2048
+Command: "/home/sviatoslav/course_project/build-release/tests/lib_tests" "--gtest_filter=ScanRandomTests/CudaScanTest.TestKernel3/14" "--gtest_also_run_disabled_tests"
+Directory: /home/sviatoslav/course_project/build-release/tests
+"ScanRandomTests/CudaScanTest.TestKernel3/2048" start time: Jun 08 00:01 EEST
+Output:
+----------------------------------------------------------
+Running main() from /home/sviatoslav/course_project/build-release/_deps/googletest-src/googletest/src/gtest_main.cc
+[0;33mNote: Google Test filter = ScanRandomTests/CudaScanTest.TestKernel3/14
+[m[0;32m[==========] [mRunning 1 test from 1 test suite.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest
+[0;32m[ RUN      ] [mScanRandomTests/CudaScanTest.TestKernel3/14
+    ArrayTestFixture::SetUp() for size: 2048
+[0;32m[       OK ] [mScanRandomTests/CudaScanTest.TestKernel3/14 (129 ms)
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest (129 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m1 test from 1 test suite ran. (129 ms total)
+[0;32m[  PASSED  ] [m1 test.
+<end of output>
+Test time =   0.20 sec
+----------------------------------------------------------
+Test Passed.
+"ScanRandomTests/CudaScanTest.TestKernel3/2048" end time: Jun 08 00:01 EEST
+"ScanRandomTests/CudaScanTest.TestKernel3/2048" time elapsed: 00:00:00
+----------------------------------------------------------
+
+69/79 Testing: ScanRandomTests/CudaScanTest.TestKernel3/4657
+69/79 Test: ScanRandomTests/CudaScanTest.TestKernel3/4657
+Command: "/home/sviatoslav/course_project/build-release/tests/lib_tests" "--gtest_filter=ScanRandomTests/CudaScanTest.TestKernel3/15" "--gtest_also_run_disabled_tests"
+Directory: /home/sviatoslav/course_project/build-release/tests
+"ScanRandomTests/CudaScanTest.TestKernel3/4657" start time: Jun 08 00:01 EEST
+Output:
+----------------------------------------------------------
+Running main() from /home/sviatoslav/course_project/build-release/_deps/googletest-src/googletest/src/gtest_main.cc
+[0;33mNote: Google Test filter = ScanRandomTests/CudaScanTest.TestKernel3/15
+[m[0;32m[==========] [mRunning 1 test from 1 test suite.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest
+[0;32m[ RUN      ] [mScanRandomTests/CudaScanTest.TestKernel3/15
+    ArrayTestFixture::SetUp() for size: 4657
+[0;32m[       OK ] [mScanRandomTests/CudaScanTest.TestKernel3/15 (169 ms)
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest (169 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m1 test from 1 test suite ran. (169 ms total)
+[0;32m[  PASSED  ] [m1 test.
+<end of output>
+Test time =   0.26 sec
+----------------------------------------------------------
+Test Passed.
+"ScanRandomTests/CudaScanTest.TestKernel3/4657" end time: Jun 08 00:01 EEST
+"ScanRandomTests/CudaScanTest.TestKernel3/4657" time elapsed: 00:00:00
+----------------------------------------------------------
+
+70/79 Testing: ScanRandomTests/CudaScanTest.TestKernel3/14765
+70/79 Test: ScanRandomTests/CudaScanTest.TestKernel3/14765
+Command: "/home/sviatoslav/course_project/build-release/tests/lib_tests" "--gtest_filter=ScanRandomTests/CudaScanTest.TestKernel3/16" "--gtest_also_run_disabled_tests"
+Directory: /home/sviatoslav/course_project/build-release/tests
+"ScanRandomTests/CudaScanTest.TestKernel3/14765" start time: Jun 08 00:01 EEST
+Output:
+----------------------------------------------------------
+Running main() from /home/sviatoslav/course_project/build-release/_deps/googletest-src/googletest/src/gtest_main.cc
+[0;33mNote: Google Test filter = ScanRandomTests/CudaScanTest.TestKernel3/16
+[m[0;32m[==========] [mRunning 1 test from 1 test suite.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest
+[0;32m[ RUN      ] [mScanRandomTests/CudaScanTest.TestKernel3/16
+    ArrayTestFixture::SetUp() for size: 14765
+[0;32m[       OK ] [mScanRandomTests/CudaScanTest.TestKernel3/16 (138 ms)
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest (138 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m1 test from 1 test suite ran. (138 ms total)
+[0;32m[  PASSED  ] [m1 test.
+<end of output>
+Test time =   0.21 sec
+----------------------------------------------------------
+Test Passed.
+"ScanRandomTests/CudaScanTest.TestKernel3/14765" end time: Jun 08 00:01 EEST
+"ScanRandomTests/CudaScanTest.TestKernel3/14765" time elapsed: 00:00:00
+----------------------------------------------------------
+
+71/79 Testing: ScanRandomTests/CudaScanTest.TestKernel3/146873
+71/79 Test: ScanRandomTests/CudaScanTest.TestKernel3/146873
+Command: "/home/sviatoslav/course_project/build-release/tests/lib_tests" "--gtest_filter=ScanRandomTests/CudaScanTest.TestKernel3/17" "--gtest_also_run_disabled_tests"
+Directory: /home/sviatoslav/course_project/build-release/tests
+"ScanRandomTests/CudaScanTest.TestKernel3/146873" start time: Jun 08 00:01 EEST
+Output:
+----------------------------------------------------------
+Running main() from /home/sviatoslav/course_project/build-release/_deps/googletest-src/googletest/src/gtest_main.cc
+[0;33mNote: Google Test filter = ScanRandomTests/CudaScanTest.TestKernel3/17
+[m[0;32m[==========] [mRunning 1 test from 1 test suite.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest
+[0;32m[ RUN      ] [mScanRandomTests/CudaScanTest.TestKernel3/17
+    ArrayTestFixture::SetUp() for size: 146873
+[0;32m[       OK ] [mScanRandomTests/CudaScanTest.TestKernel3/17 (132 ms)
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest (132 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m1 test from 1 test suite ran. (132 ms total)
+[0;32m[  PASSED  ] [m1 test.
+<end of output>
+Test time =   0.21 sec
+----------------------------------------------------------
+Test Passed.
+"ScanRandomTests/CudaScanTest.TestKernel3/146873" end time: Jun 08 00:01 EEST
+"ScanRandomTests/CudaScanTest.TestKernel3/146873" time elapsed: 00:00:00
+----------------------------------------------------------
+
+72/79 Testing: ScanRandomTests/CudaScanTest.TestKernel3/65536
+72/79 Test: ScanRandomTests/CudaScanTest.TestKernel3/65536
+Command: "/home/sviatoslav/course_project/build-release/tests/lib_tests" "--gtest_filter=ScanRandomTests/CudaScanTest.TestKernel3/18" "--gtest_also_run_disabled_tests"
+Directory: /home/sviatoslav/course_project/build-release/tests
+"ScanRandomTests/CudaScanTest.TestKernel3/65536" start time: Jun 08 00:01 EEST
+Output:
+----------------------------------------------------------
+Running main() from /home/sviatoslav/course_project/build-release/_deps/googletest-src/googletest/src/gtest_main.cc
+[0;33mNote: Google Test filter = ScanRandomTests/CudaScanTest.TestKernel3/18
+[m[0;32m[==========] [mRunning 1 test from 1 test suite.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest
+[0;32m[ RUN      ] [mScanRandomTests/CudaScanTest.TestKernel3/18
+    ArrayTestFixture::SetUp() for size: 65536
+[0;32m[       OK ] [mScanRandomTests/CudaScanTest.TestKernel3/18 (137 ms)
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest (137 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m1 test from 1 test suite ran. (137 ms total)
+[0;32m[  PASSED  ] [m1 test.
+<end of output>
+Test time =   0.21 sec
+----------------------------------------------------------
+Test Passed.
+"ScanRandomTests/CudaScanTest.TestKernel3/65536" end time: Jun 08 00:01 EEST
+"ScanRandomTests/CudaScanTest.TestKernel3/65536" time elapsed: 00:00:00
+----------------------------------------------------------
+
+73/79 Testing: ScanRandomTests/CudaScanTest.TestKernel3/131034
+73/79 Test: ScanRandomTests/CudaScanTest.TestKernel3/131034
+Command: "/home/sviatoslav/course_project/build-release/tests/lib_tests" "--gtest_filter=ScanRandomTests/CudaScanTest.TestKernel3/19" "--gtest_also_run_disabled_tests"
+Directory: /home/sviatoslav/course_project/build-release/tests
+"ScanRandomTests/CudaScanTest.TestKernel3/131034" start time: Jun 08 00:01 EEST
+Output:
+----------------------------------------------------------
+Running main() from /home/sviatoslav/course_project/build-release/_deps/googletest-src/googletest/src/gtest_main.cc
+[0;33mNote: Google Test filter = ScanRandomTests/CudaScanTest.TestKernel3/19
+[m[0;32m[==========] [mRunning 1 test from 1 test suite.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest
+[0;32m[ RUN      ] [mScanRandomTests/CudaScanTest.TestKernel3/19
+    ArrayTestFixture::SetUp() for size: 131034
+[0;32m[       OK ] [mScanRandomTests/CudaScanTest.TestKernel3/19 (134 ms)
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest (134 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m1 test from 1 test suite ran. (134 ms total)
+[0;32m[  PASSED  ] [m1 test.
+<end of output>
+Test time =   0.21 sec
+----------------------------------------------------------
+Test Passed.
+"ScanRandomTests/CudaScanTest.TestKernel3/131034" end time: Jun 08 00:01 EEST
+"ScanRandomTests/CudaScanTest.TestKernel3/131034" time elapsed: 00:00:00
+----------------------------------------------------------
+
+74/79 Testing: ScanRandomTests/CudaScanTest.TestKernel3/262193
+74/79 Test: ScanRandomTests/CudaScanTest.TestKernel3/262193
+Command: "/home/sviatoslav/course_project/build-release/tests/lib_tests" "--gtest_filter=ScanRandomTests/CudaScanTest.TestKernel3/20" "--gtest_also_run_disabled_tests"
+Directory: /home/sviatoslav/course_project/build-release/tests
+"ScanRandomTests/CudaScanTest.TestKernel3/262193" start time: Jun 08 00:01 EEST
+Output:
+----------------------------------------------------------
+Running main() from /home/sviatoslav/course_project/build-release/_deps/googletest-src/googletest/src/gtest_main.cc
+[0;33mNote: Google Test filter = ScanRandomTests/CudaScanTest.TestKernel3/20
+[m[0;32m[==========] [mRunning 1 test from 1 test suite.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest
+[0;32m[ RUN      ] [mScanRandomTests/CudaScanTest.TestKernel3/20
+    ArrayTestFixture::SetUp() for size: 262193
+[0;32m[       OK ] [mScanRandomTests/CudaScanTest.TestKernel3/20 (134 ms)
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest (134 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m1 test from 1 test suite ran. (134 ms total)
+[0;32m[  PASSED  ] [m1 test.
+<end of output>
+Test time =   0.21 sec
+----------------------------------------------------------
+Test Passed.
+"ScanRandomTests/CudaScanTest.TestKernel3/262193" end time: Jun 08 00:01 EEST
+"ScanRandomTests/CudaScanTest.TestKernel3/262193" time elapsed: 00:00:00
+----------------------------------------------------------
+
+75/79 Testing: ScanRandomTests/CudaScanTest.TestKernel3/1048577
+75/79 Test: ScanRandomTests/CudaScanTest.TestKernel3/1048577
+Command: "/home/sviatoslav/course_project/build-release/tests/lib_tests" "--gtest_filter=ScanRandomTests/CudaScanTest.TestKernel3/21" "--gtest_also_run_disabled_tests"
+Directory: /home/sviatoslav/course_project/build-release/tests
+"ScanRandomTests/CudaScanTest.TestKernel3/1048577" start time: Jun 08 00:01 EEST
+Output:
+----------------------------------------------------------
+Running main() from /home/sviatoslav/course_project/build-release/_deps/googletest-src/googletest/src/gtest_main.cc
+[0;33mNote: Google Test filter = ScanRandomTests/CudaScanTest.TestKernel3/21
+[m[0;32m[==========] [mRunning 1 test from 1 test suite.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest
+[0;32m[ RUN      ] [mScanRandomTests/CudaScanTest.TestKernel3/21
+    ArrayTestFixture::SetUp() for size: 1048577
+[0;32m[       OK ] [mScanRandomTests/CudaScanTest.TestKernel3/21 (142 ms)
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest (142 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m1 test from 1 test suite ran. (142 ms total)
+[0;32m[  PASSED  ] [m1 test.
+<end of output>
+Test time =   0.22 sec
+----------------------------------------------------------
+Test Passed.
+"ScanRandomTests/CudaScanTest.TestKernel3/1048577" end time: Jun 08 00:01 EEST
+"ScanRandomTests/CudaScanTest.TestKernel3/1048577" time elapsed: 00:00:00
+----------------------------------------------------------
+
+76/79 Testing: ScanRandomTests/CudaScanTest.TestKernel3/2097151
+76/79 Test: ScanRandomTests/CudaScanTest.TestKernel3/2097151
+Command: "/home/sviatoslav/course_project/build-release/tests/lib_tests" "--gtest_filter=ScanRandomTests/CudaScanTest.TestKernel3/22" "--gtest_also_run_disabled_tests"
+Directory: /home/sviatoslav/course_project/build-release/tests
+"ScanRandomTests/CudaScanTest.TestKernel3/2097151" start time: Jun 08 00:01 EEST
+Output:
+----------------------------------------------------------
+Running main() from /home/sviatoslav/course_project/build-release/_deps/googletest-src/googletest/src/gtest_main.cc
+[0;33mNote: Google Test filter = ScanRandomTests/CudaScanTest.TestKernel3/22
+[m[0;32m[==========] [mRunning 1 test from 1 test suite.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest
+[0;32m[ RUN      ] [mScanRandomTests/CudaScanTest.TestKernel3/22
+    ArrayTestFixture::SetUp() for size: 2097151
+[0;32m[       OK ] [mScanRandomTests/CudaScanTest.TestKernel3/22 (156 ms)
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest (156 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m1 test from 1 test suite ran. (156 ms total)
+[0;32m[  PASSED  ] [m1 test.
+<end of output>
+Test time =   0.23 sec
+----------------------------------------------------------
+Test Passed.
+"ScanRandomTests/CudaScanTest.TestKernel3/2097151" end time: Jun 08 00:01 EEST
+"ScanRandomTests/CudaScanTest.TestKernel3/2097151" time elapsed: 00:00:00
+----------------------------------------------------------
+
+77/79 Testing: ScanRandomTests/CudaScanTest.TestKernel3/4194538
+77/79 Test: ScanRandomTests/CudaScanTest.TestKernel3/4194538
+Command: "/home/sviatoslav/course_project/build-release/tests/lib_tests" "--gtest_filter=ScanRandomTests/CudaScanTest.TestKernel3/23" "--gtest_also_run_disabled_tests"
+Directory: /home/sviatoslav/course_project/build-release/tests
+"ScanRandomTests/CudaScanTest.TestKernel3/4194538" start time: Jun 08 00:01 EEST
+Output:
+----------------------------------------------------------
+Running main() from /home/sviatoslav/course_project/build-release/_deps/googletest-src/googletest/src/gtest_main.cc
+[0;33mNote: Google Test filter = ScanRandomTests/CudaScanTest.TestKernel3/23
+[m[0;32m[==========] [mRunning 1 test from 1 test suite.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest
+[0;32m[ RUN      ] [mScanRandomTests/CudaScanTest.TestKernel3/23
+    ArrayTestFixture::SetUp() for size: 4194538
+[0;32m[       OK ] [mScanRandomTests/CudaScanTest.TestKernel3/23 (171 ms)
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest (171 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m1 test from 1 test suite ran. (171 ms total)
+[0;32m[  PASSED  ] [m1 test.
+<end of output>
+Test time =   0.24 sec
+----------------------------------------------------------
+Test Passed.
+"ScanRandomTests/CudaScanTest.TestKernel3/4194538" end time: Jun 08 00:01 EEST
+"ScanRandomTests/CudaScanTest.TestKernel3/4194538" time elapsed: 00:00:00
+----------------------------------------------------------
+
+78/79 Testing: ScanRandomTests/CudaScanTest.TestKernel3/33554510
+78/79 Test: ScanRandomTests/CudaScanTest.TestKernel3/33554510
+Command: "/home/sviatoslav/course_project/build-release/tests/lib_tests" "--gtest_filter=ScanRandomTests/CudaScanTest.TestKernel3/24" "--gtest_also_run_disabled_tests"
+Directory: /home/sviatoslav/course_project/build-release/tests
+"ScanRandomTests/CudaScanTest.TestKernel3/33554510" start time: Jun 08 00:01 EEST
+Output:
+----------------------------------------------------------
+Running main() from /home/sviatoslav/course_project/build-release/_deps/googletest-src/googletest/src/gtest_main.cc
+[0;33mNote: Google Test filter = ScanRandomTests/CudaScanTest.TestKernel3/24
+[m[0;32m[==========] [mRunning 1 test from 1 test suite.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest
+[0;32m[ RUN      ] [mScanRandomTests/CudaScanTest.TestKernel3/24
+    ArrayTestFixture::SetUp() for size: 33554510
+[0;32m[       OK ] [mScanRandomTests/CudaScanTest.TestKernel3/24 (516 ms)
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest (516 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m1 test from 1 test suite ran. (516 ms total)
+[0;32m[  PASSED  ] [m1 test.
+<end of output>
+Test time =   0.58 sec
+----------------------------------------------------------
+Test Passed.
+"ScanRandomTests/CudaScanTest.TestKernel3/33554510" end time: Jun 08 00:01 EEST
+"ScanRandomTests/CudaScanTest.TestKernel3/33554510" time elapsed: 00:00:00
+----------------------------------------------------------
+
+79/79 Testing: ScanRandomTests/CudaScanTest.TestKernel3/536735925
+79/79 Test: ScanRandomTests/CudaScanTest.TestKernel3/536735925
+Command: "/home/sviatoslav/course_project/build-release/tests/lib_tests" "--gtest_filter=ScanRandomTests/CudaScanTest.TestKernel3/25" "--gtest_also_run_disabled_tests"
+Directory: /home/sviatoslav/course_project/build-release/tests
+"ScanRandomTests/CudaScanTest.TestKernel3/536735925" start time: Jun 08 00:01 EEST
+Output:
+----------------------------------------------------------
+Running main() from /home/sviatoslav/course_project/build-release/_deps/googletest-src/googletest/src/gtest_main.cc
+[0;33mNote: Google Test filter = ScanRandomTests/CudaScanTest.TestKernel3/25
+[m[0;32m[==========] [mRunning 1 test from 1 test suite.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest
+[0;32m[ RUN      ] [mScanRandomTests/CudaScanTest.TestKernel3/25
+    ArrayTestFixture::SetUp() for size: 536735925
+[0;32m[       OK ] [mScanRandomTests/CudaScanTest.TestKernel3/25 (5750 ms)
+[0;32m[----------] [m1 test from ScanRandomTests/CudaScanTest (5750 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m1 test from 1 test suite ran. (5750 ms total)
+[0;32m[  PASSED  ] [m1 test.
+<end of output>
+Test time =   5.85 sec
+----------------------------------------------------------
+Test Passed.
+"ScanRandomTests/CudaScanTest.TestKernel3/536735925" end time: Jun 08 00:01 EEST
+"ScanRandomTests/CudaScanTest.TestKernel3/536735925" time elapsed: 00:00:05
+----------------------------------------------------------
+
+End testing: Jun 08 00:01 EEST

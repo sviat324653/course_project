@@ -51,8 +51,12 @@ if(CMAKE_SYSTEM_NAME STREQUAL "Windows" OR CMAKE_SYSTEM_NAME STREQUAL "Linux")
             PRIVATE reduction_test.c
             PRIVATE scan_test.c
             PRIVATE reduction_avx.c
+            PRIVATE stream_compaction_test.c
+            PRIVATE sort_test.c
             PRIVATE reduction.cu
             PRIVATE scan.cu
+            PRIVATE stream_compaction.cu
+            PRIVATE sort.cu
     )
 endif()
 
@@ -116,8 +120,18 @@ add_library(component_lib STATIC
 
 
 add_library(multivex SHARED
+    reduction.cu
     scan.cu
+    stream_compaction.cu
+    sort.cu
 )
+
+
+set_target_properties(multivex PROPERTIES
+        CUDA_SEPARABLE_COMPILATION ON
+        CUDA_ARCHITECTURES "75")
+target_compile_options(multivex PRIVATE
+            $<$<COMPILE_LANGUAGE:CUDA>:--generate-line-info -O3 -Wall -Xcompiler -fdiagnostics-color=always>)
 
 
 add_subdirectory(tests)

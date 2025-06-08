@@ -9,11 +9,11 @@
 
 
 
-extern "C" void call_scan_kernel1(float *h_in, float *h_out, unsigned int n);
+extern "C" void cuda_scan1(float *h_in, float *h_out, unsigned int n);
 
-extern "C" void call_scan_kernel2(float *h_in, float *h_out, unsigned int n);
+extern "C" void cuda_scan2(float *h_in, float *h_out, unsigned int n);
 
-extern "C" void call_scan_kernel3(float *h_in, float *h_out, unsigned int n);
+extern "C" void cuda_scan3(float *h_in, float *h_out, unsigned int n);
 # 2 "/home/sviatoslav/course_project/tests/tests.cpp" 2
 # 1 "/home/sviatoslav/course_project/build-release/_deps/googletest-src/googletest/include/gtest/gtest.h" 1 3 4
 # 52 "/home/sviatoslav/course_project/build-release/_deps/googletest-src/googletest/include/gtest/gtest.h" 3 4
@@ -120962,7 +120962,7 @@ CudaScanTest_TestKernel1_Test
 
 # 72 "/home/sviatoslav/course_project/tests/tests.cpp"
 {
-    call_scan_kernel1(h_in_, h_out_, size_);
+    cuda_scan1(h_in_, h_out_, size_);
     for (unsigned int i = 0; i < size_; i++)
     {
         
@@ -121032,7 +121032,7 @@ CudaScanTest_TestKernel2_Test
 
 # 82 "/home/sviatoslav/course_project/tests/tests.cpp"
 {
-    call_scan_kernel2(h_in_, h_out_, size_);
+    cuda_scan2(h_in_, h_out_, size_);
     for (unsigned int i = 0; i < size_ - 1; i++)
     {
         
@@ -121102,7 +121102,7 @@ CudaScanTest_TestKernel3_Test
 
 # 92 "/home/sviatoslav/course_project/tests/tests.cpp"
 {
-    call_scan_kernel3(h_in_, h_out_, size_);
+    cuda_scan3(h_in_, h_out_, size_);
     for (unsigned int i = 0; i < size_ - 1; i++)
     {
         

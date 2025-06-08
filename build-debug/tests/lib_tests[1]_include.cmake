@@ -1,0 +1,5 @@
+if(EXISTS "/home/sviatoslav/course_project/build-debug/tests/lib_tests[1]_tests.cmake")
+  include("/home/sviatoslav/course_project/build-debug/tests/lib_tests[1]_tests.cmake")
+else()
+  add_test(lib_tests_NOT_BUILT lib_tests_NOT_BUILT)
+endif()
